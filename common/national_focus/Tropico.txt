@@ -1,5 +1,5 @@
 focus_tree = {
-	id = tropico_tree
+	id = tropico
 	
 	country = {
 		factor = 0
@@ -10,19 +10,19 @@ focus_tree = {
 		}
 	}
 	
-	default = yes
-	reset_on_civilwar = no
-	
-continuous_focus_position = { x = 700 y = 1050 }
+	default = no
+
+continuous_focus_position = { x = 700 y = 1250 }
 
 ################################################################################################################
 	focus = {
-		id = el_presidente
 		icon = GFX_TPO_el_pres
+		id = el_presidente
 		x = 10
 		y = 0
+		available={}
+		prerequisite={}
 		cost = 0.5
-
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -37,7 +37,7 @@ continuous_focus_position = { x = 700 y = 1050 }
 		icon = GFX_TPO_caribbean_dream
 		relative_position_id = el_presidente
 		x = 0
-		y = 2
+		y = 3
 		cost = 2
 		
 		available_if_capitulated = yes
@@ -1701,7 +1701,7 @@ focus = {
 ####################################################################################################
 	focus = {
 		id = pressure_us_1
-		prerequisite = {}
+		
 		relative_position_id = el_presidente
 		icon = GFX_TPO_USA_1
 		x = -2
@@ -1711,7 +1711,7 @@ focus = {
 		available_if_capitulated = yes
 
 		available = {
-		And = {		 
+		AND = {		 
 					country_exists = PAN
 					country_exists = NIC
 					country_exists = COS
@@ -1720,9 +1720,10 @@ focus = {
 					country_exists = ELS
 					country_exists = HON
 					
-				has_army_manpower = {
+				TPO={has_army_manpower = {
 									size > 49999
 				}	
+			  }
 			  }
 					}
 
@@ -1768,11 +1769,12 @@ focus = {
 						    }
 						}
 					}
+					
 		}
 			
 	focus = {
 		id = pressure_us_2
-		prerequisite = {}
+		
 		relative_position_id = el_presidente
 		icon = GFX_TPO_USA_2
 		x = -4
@@ -1827,7 +1829,7 @@ focus = {
 		id = pressure_us_3
 		icon = GFX_TPO_USA_3
 		relative_position_id = el_presidente
-		prerequisite = {}
+		
 		x = 2
 		y = 2
 		cost = 2
@@ -1835,14 +1837,13 @@ focus = {
 		available_if_capitulated = yes
 
 		available = {
-		And = {		 
+		AND = {		 
 					country_exists = COL
 					country_exists = VEN
 					country_exists = ECU
 					country_exists = PRU
 					country_exists = BRA
-					has_manpower > 14999
-					
+			   TPO={has_manpower > 14999}
 			  }
 					}
 		completion_reward = {
@@ -1884,7 +1885,7 @@ focus = {
 		id = pressure_us_4
 		icon = GFX_TPO_USA_4
 		relative_position_id = el_presidente
-		prerequisite = {}
+		
 		x = 4
 		y = 2
 		cost = 2

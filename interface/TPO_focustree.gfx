@@ -1,5 +1,5 @@
 SpriteTypes = {			
-	
+
 	SpriteType  = {
 		name = "GFX_TPO_el_pres"
 		texturefile = "gfx/interface/goals/focus_TPO_el_pres.dds"
