@@ -1,0 +1,147 @@
+spriteTypes = {
+    spriteType = {
+	name = "GFX_idea_TPO_veronica_veneno"
+		texturefile = "gfx/interface/ideas/idea_TPO_veronica_veneno.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_TPO_marco_moreno"
+		texturefile = "gfx/interface/ideas/idea_TPO_marco_moreno.dds"
+	}
+		
+	spriteType = {
+	name = "GFX_idea_TPO_adriana_diaz"
+		texturefile = "gfx/interface/ideas/idea_TPO_adriana_diaz.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_TPO_agent_sasha"
+		texturefile = "gfx/interface/ideas/idea_TPO_agent_sasha.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_TPO_albert_zweistein"
+		texturefile = "gfx/interface/ideas/idea_TPO_albert_zweistein.dds"
+	}
+
+	spriteType = {
+	name = "GFX_idea_TPO_ambassador_crane"
+		texturefile = "gfx/interface/ideas/idea_TPO_ambassador_crane.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_TPO_antonio_lopez"
+		texturefile = "gfx/interface/ideas/idea_TPO_antonio_lopez.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_TPO_brunhilde_von_hoof"
+		texturefile = "gfx/interface/ideas/idea_TPO_brunhilde_von_hoof.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_TPO_comrade_vasquez"
+		texturefile = "gfx/interface/ideas/idea_TPO_comrade_vasquez.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_TPO_donald_pynch"
+		texturefile = "gfx/interface/ideas/idea_TPO_donald_pynch.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_TPO_dr_steinschneider"
+		texturefile = "gfx/interface/ideas/idea_TPO_dr_steinschneider.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_TPO_igor_fedorov"
+		texturefile = "gfx/interface/ideas/idea_TPO_igor_fedorov.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_TPO_rodriguez"
+		texturefile = "gfx/interface/ideas/idea_TPO_rodriguez.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_TPO_santana"
+		texturefile = "gfx/interface/ideas/idea_TPO_santana.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_TPO_keith_preston"
+		texturefile = "gfx/interface/ideas/idea_TPO_keith_preston.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_TPO_lord_chuffney"
+		texturefile = "gfx/interface/ideas/idea_TPO_lord_chuffney.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_TPO_miss_pineapple"
+		texturefile = "gfx/interface/ideas/idea_TPO_miss_pineapple.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_TPO_nick_richards"
+		texturefile = "gfx/interface/ideas/idea_TPO_nick_richards.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_TPO_reverend_esteban"
+		texturefile = "gfx/interface/ideas/idea_TPO_reverend_esteban.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_TPO_rudolph_thompson"
+		texturefile = "gfx/interface/ideas/idea_TPO_rudolph_thompson.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_TPO_sheik_salim"
+		texturefile = "gfx/interface/ideas/idea_TPO_sheik_sallim.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_TPO_sunny_flowers"
+		texturefile = "gfx/interface/ideas/idea_TPO_sunny_flowers.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_TPO_the_shadow"
+		texturefile = "gfx/interface/ideas/idea_TPO_the_shadow.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_TPO_leon_kane"
+		texturefile = "gfx/interface/ideas/idea_TPO_leon_kane.dds"
+	}
+
+	spriteType = {
+	name = "GFX_idea_TPO_penultimo"
+		texturefile = "gfx/interface/ideas/idea_TPO_penultimo.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_TPO_el_diablo"
+		texturefile = "gfx/interface/ideas/idea_TPO_el_diablo.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_TPO_yu_li"
+		texturefile = "gfx/interface/ideas/idea_TPO_yu_li.dds"
+	}
+
+	spriteType = {
+	name = "GFX_idea_TPO_lord_oaksworth"
+		texturefile = "gfx/interface/ideas/idea_TPO_lord_oaksworth.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_TPO_evita_vasquez"
+		texturefile = "gfx/interface/ideas/idea_TPO_evita_vasquez.dds"
+	}
+
+}

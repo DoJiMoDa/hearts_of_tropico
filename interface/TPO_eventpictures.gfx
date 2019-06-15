@@ -1,0 +1,37 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_tropico_speech"
+		texturefile = "gfx/event_pictures/tropico_speech.dds"
+	}
+
+	spriteType = {
+		name = "GFX_penultimo"
+		texturefile = "gfx/event_pictures/penultimo.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_shadow"
+		texturefile = "gfx/event_pictures/shadow.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_op_germany"
+		texturefile = "gfx/event_pictures/germany.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_op_allies"
+		texturefile = "gfx/event_pictures/allies.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_op_china"
+		texturefile = "gfx/event_pictures/china.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_op_soviet"
+		texturefile = "gfx/event_pictures/soviet.dds"
+	}
+}

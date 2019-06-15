@@ -1,0 +1,679 @@
+TPO_cold_war = {
+###############################################################################################################
+big_brother = {
+		allowed = { tag = TPO }
+		visible = {
+			NOT = {
+				has_idea = big_brother
+			}
+		}
+		available={num_of_civilian_factories_available_for_projects > 1}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 0
+		complete_effect = {
+			add_ideas = big_brother
+			
+		}
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+	}
+remove_big_brother = {
+		available = {
+			has_idea = big_brother
+		}
+		visible = {
+			has_idea = big_brother
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 1
+			modifier = {
+
+			}
+		}
+		days_remove = 0
+		complete_effect = {
+			remove_ideas = big_brother
+						  }
+		}	
+###############################################################################################################
+hydraulic_fracking = {
+		allowed = { tag = TPO }
+		visible = {
+			NOT = {
+				has_idea = hydraulic_fracking
+			}
+		}
+		available={num_of_civilian_factories_available_for_projects > 1}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 0
+		complete_effect = {
+			add_ideas = hydraulic_fracking
+			
+		}
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+	}
+remove_hydraulic_fracking = {
+		available = {
+			has_idea = hydraulic_fracking
+		}
+		visible = {
+			has_idea = hydraulic_fracking
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 1
+			modifier = {
+
+			}
+		}
+		days_remove = 0
+		complete_effect = {
+			remove_ideas = hydraulic_fracking
+						  }
+		}
+###############################################################################################################
+immunization_campaign = {
+		allowed = { tag = TPO }
+		visible = {
+			NOT = {
+				has_idea = immunization_campaign
+			}
+		}
+		available={num_of_civilian_factories_available_for_projects > 1}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 0
+		complete_effect = {
+			add_ideas = immunization_campaign
+			
+		}
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+	}
+remove_immunization_campaign = {
+		available = {
+			has_idea = immunization_campaign
+		}
+		visible = {
+			has_idea = immunization_campaign
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 1
+			modifier = {
+
+			}
+		}
+		days_remove = 0
+		complete_effect = {
+			remove_ideas = immunization_campaign
+						  }
+		}
+###############################################################################################################
+organic_campaign = {
+		allowed = { tag = TPO }
+		visible = {
+			NOT = {
+				has_idea = organic_campaign
+			}
+		}
+		available={num_of_civilian_factories_available_for_projects > 1}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 0
+		complete_effect = {
+			add_ideas = organic_campaign
+			
+		}
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+	}
+remove_organic_campaign = {
+		available = {
+			has_idea = organic_campaign
+		}
+		visible = {
+			has_idea = organic_campaign
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 1
+			modifier = {
+
+			}
+		}
+		days_remove = 0
+		complete_effect = {
+			remove_ideas = organic_campaign
+						  }
+		}
+###############################################################################################################
+provoke_rebels = {
+		allowed = { tag = TPO }
+		visible = {
+			NOT = {
+				has_idea = provoke_rebels
+			}
+		}
+		available={num_of_civilian_factories_available_for_projects > 1}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 0
+		complete_effect = {
+			add_ideas = provoke_rebels
+			
+		}
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+	}
+remove_provoke_rebels = {
+		available = {
+			has_idea = provoke_rebels
+		}
+		visible = {
+			has_idea = provoke_rebels
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 1
+			modifier = {
+
+			}
+		}
+		days_remove = 0
+		complete_effect = {
+			remove_ideas = provoke_rebels
+						  }
+		}
+###############################################################################################################
+secret_police = {
+		allowed = { tag = TPO }
+		visible = {
+			NOT = {
+				has_idea = secret_police
+			}
+		}
+		available={num_of_civilian_factories_available_for_projects > 1}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 0
+		complete_effect = {
+			add_ideas = secret_police
+			
+		}
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+	}
+remove_secret_police = {
+		available = {
+			has_idea = secret_police
+		}
+		visible = {
+			has_idea = secret_police
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 1
+			modifier = {
+
+			}
+		}
+		days_remove = 0
+		complete_effect = {
+			remove_ideas = secret_police
+						  }
+		}
+###############################################################################################################
+sensetivity_training = {
+		allowed = { tag = TPO }
+		visible = {
+			NOT = {
+				has_idea = sensetivity_training
+			}
+		}
+		available={num_of_civilian_factories_available_for_projects > 1}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 0
+		complete_effect = {
+			add_ideas = sensetivity_training
+			
+		}
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+	}
+remove_sensetivity_training = {
+		available = {
+			has_idea = sensetivity_training
+		}
+		visible = {
+			has_idea = sensetivity_training
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 1
+			modifier = {
+
+			}
+		}
+		days_remove = 0
+		complete_effect = {
+			remove_ideas = sensetivity_training
+						  }
+		}
+###############################################################################################################
+tourism_campaign = {
+		allowed = { tag = TPO }
+		visible = {
+			NOT = {
+				has_idea = tourism_campaign
+			}
+		}
+		available={num_of_civilian_factories_available_for_projects > 1}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 0
+		complete_effect = {
+			add_ideas = tourism_campaign
+			
+		}
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+	}
+remove_tourism_campaign = {
+		available = {
+			has_idea = tourism_campaign
+		}
+		visible = {
+			has_idea = tourism_campaign
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 1
+			modifier = {
+
+			}
+		}
+		days_remove = 0
+		complete_effect = {
+			remove_ideas = tourism_campaign
+						  }
+		}
+###############################################################################################################
+waste_sorting = {
+		allowed = { tag = TPO }
+		visible = {
+			NOT = {
+				has_idea = waste_sorting
+			}
+		}
+		available={num_of_civilian_factories_available_for_projects > 1}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 0
+		complete_effect = {
+			add_ideas = waste_sorting
+			
+		}
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+	}
+remove_waste_sorting = {
+		available = {
+			has_idea = waste_sorting
+		}
+		visible = {
+			has_idea = waste_sorting
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 1
+			modifier = {
+
+			}
+		}
+		days_remove = 0
+		complete_effect = {
+			remove_ideas = waste_sorting
+						  }
+		}
+###############################################################################################################
+free_media = {
+		allowed = { tag = TPO }
+		visible = {
+			NOT = {
+				has_idea = free_media
+			}
+		}
+		available={num_of_civilian_factories_available_for_projects > 1}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 0
+		complete_effect = {
+			add_ideas = free_media
+			
+		}
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+	}
+remove_free_media = {
+		available = {
+			has_idea = free_media
+		}
+		visible = {
+			has_idea = free_media
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 1
+			modifier = {
+
+			}
+		}
+		days_remove = 0
+		complete_effect = {
+			remove_ideas = free_media
+						  }
+		}
+###############################################################################################################
+alternativ_food_sources = {
+		allowed = { tag = TPO }
+		visible = {
+			NOT = {
+				has_idea = alternativ_food_sources
+			}
+		}
+		available={num_of_civilian_factories_available_for_projects > 1}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 0
+		complete_effect = {
+			add_ideas = alternativ_food_sources
+			
+		}
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+	}
+remove_alternativ_food_sources = {
+		available = {
+			has_idea = alternativ_food_sources
+		}
+		visible = {
+			has_idea = alternativ_food_sources
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 1
+			modifier = {
+
+			}
+		}
+		days_remove = 0
+		complete_effect = {
+			remove_ideas = alternativ_food_sources
+						  }
+		}
+###############################################################################################################
+experimental_ground_treatment = {
+		allowed = { tag = TPO }
+		visible = {
+			NOT = {
+				has_idea = experimental_ground_treatment
+			}
+		}
+		available={num_of_civilian_factories_available_for_projects > 1}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 0
+		complete_effect = {
+			add_ideas = experimental_ground_treatment
+			
+		}
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+	}
+remove_experimental_ground_treatment = {
+		available = {
+			has_idea = experimental_ground_treatment
+		}
+		visible = {
+			has_idea = experimental_ground_treatment
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 1
+			modifier = {
+
+			}
+		}
+		days_remove = 0
+		complete_effect = {
+			remove_ideas = experimental_ground_treatment
+						  }
+		}
+
+###############################################################################################################
+nuclear_weapon_tests = {
+		allowed = { tag = TPO }
+		visible = {
+			NOT = {
+				has_idea = nuclear_weapon_tests
+			}
+		}
+		available={num_of_civilian_factories_available_for_projects > 1}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 0
+		complete_effect = {
+			add_ideas = nuclear_weapon_tests
+			add_research_slot = 1
+		}
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+	}
+remove_nuclear_weapon_tests = {
+		available = {
+			has_idea = nuclear_weapon_tests
+		}
+		visible = {
+			has_idea = nuclear_weapon_tests
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 1
+			modifier = {
+
+			}
+		}
+		days_remove = 0
+		complete_effect = {
+			remove_ideas = nuclear_weapon_tests
+						  }
+		}
+###############################################################################################################
+happy_meat = {
+		allowed = { tag = TPO }
+		visible = {
+			NOT = {
+				has_idea = happy_meat
+			}
+		}
+		available={num_of_civilian_factories_available_for_projects > 1}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 0
+		complete_effect = {
+			add_ideas = happy_meat
+			
+		}
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+	}
+remove_happy_meat = {
+		available = {
+			has_idea = happy_meat
+		}
+		visible = {
+			has_idea = happy_meat
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 1
+			modifier = {
+
+			}
+		}
+		days_remove = 0
+		complete_effect = {
+			remove_ideas = happy_meat
+						  }
+		}
+###############################################################################################################
+assambly_ban = {
+		allowed = { tag = TPO }
+		visible = {
+			NOT = {
+				has_idea = assambly_ban
+			}
+		}
+		available={num_of_civilian_factories_available_for_projects > 1}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 0
+		complete_effect = {
+			add_ideas = assambly_ban
+			
+		}
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+	}
+remove_assambly_ban = {
+		available = {
+			has_idea = assambly_ban
+		}
+		visible = {
+			has_idea = assambly_ban
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 1
+			modifier = {
+
+			}
+		}
+		days_remove = 0
+		complete_effect = {
+			remove_ideas = assambly_ban
+						  }
+		}
+
+###############################################################################################################
+spelling_bee = {
+		allowed = { tag = TPO }
+		visible = {
+			NOT = {
+				has_idea = spelling_bee
+			}
+		}
+		available={num_of_civilian_factories_available_for_projects > 1}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 0
+		complete_effect = {
+			add_ideas = spelling_bee
+			
+		}
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+	}
+remove_spelling_bee = {
+		available = {
+			has_idea = spelling_bee
+		}
+		visible = {
+			has_idea = spelling_bee
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 1
+			modifier = {
+
+			}
+		}
+		days_remove = 0
+		complete_effect = {
+			remove_ideas = spelling_bee
+						  }
+		}
+		
+
+##################################################################################################################	
+}

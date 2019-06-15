@@ -1,0 +1,30 @@
+﻿division_template = {
+	name = "Haiti Volunteers"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		heavy_armor = {x = 2 y = 0}
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+}
+
+
+units = {
+
+	division= {	
+		name = "Club de futbol Haitiano"
+		location = 4641
+		division_template = "Haiti Volunteers"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+		add_equipment = { amount = 360 equipment_name = HAI_infantry_equipment_0}
+		add_equipment = { amount = 80 equipment_name = TPO_infantry_equipment_0}
+		add_equipment = { amount = 60 equipment_name = ENG_heavy_tank_equipment_!}
+		add_equipment = { amount = 10 equipment_name = HAI_support_equipment_0}
+	}
+}

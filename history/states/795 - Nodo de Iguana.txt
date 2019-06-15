@@ -1,0 +1,40 @@
+state={
+	id=795
+	name="STATE_795"
+	manpower = 366299
+	
+	state_category = rural
+
+	resources={
+				oil= 6
+				steel = 4 
+				rubber = 11
+				tungsten = 6
+				aluminium = 2
+				chromium = 2
+			  }
+
+	history={
+		add_core_of = TPO
+		owner = TPO
+		victory_points = {
+			13222 5
+		}
+		buildings = {
+			industrial_complex = 1
+			arms_factory = 1
+			infrastructure = 5
+			air_base = 2
+			anti_air_building = 2
+			13222 = {
+				naval_base = 2
+				coastal_bunker = 4
+				bunker = 4
+			}
+		}
+	}
+
+	provinces={
+		13222
+	}
+}

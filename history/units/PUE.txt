@@ -1,0 +1,28 @@
+﻿division_template = {
+	name = "Puerto Rico Volunteers"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+}
+
+
+units = {
+
+	division= {	
+		name = "Puerto Recon"
+		location = 1440
+		division_template = "Puerto Rico Volunteers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1.0
+	add_equipment = { amount = 200 equipment_name = PUE_infantry_equipment_0}
+	add_equipment = { amount = 140 equipment_name = USA_infantry_equipment_0}	
+	add_equipment = { amount = 100 equipment_name = TPO_infantry_equipment_0}
+	add_equipment = { amount = 10 equipment_name = PUE_support_equipment_0}
+}

@@ -1,0 +1,27 @@
+﻿division_template = {
+	name = "Dominican Volunteers"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		light_armor = {x = 2 y = 0}
+	}
+}
+
+
+units = {
+	division= {	
+		name = "Club dominicano de balonmano"
+		location = 7660
+		division_template = "Dominican Volunteers"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	add_equipment = { amount = 350 equipment_name = DOM_infantry_equipment_0}
+	add_equipment = { amount = 50 equipment_name = TPO_infantry_equipment_0}	
+	add_equipment = { amount = 40 equipment_name = ENG_light_tank_equipment_0}
+	add_equipment = { amount = 20 equipment_name = FRA_light_tank_equipment_0}
+	add_equipment = { amount = 100 equipment_name = DOM_infantry_equipment_0}
+	}
+}

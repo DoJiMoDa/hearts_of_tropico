@@ -1,0 +1,133 @@
+Adriana Diaz			smart cutie
+
+
+Agent Sasha				russian cutie
+
+
+Albert Zweistein		smart but boring
+
+
+Ambassador Crane		sometimes funny
+
+
+Antonio Lopez			got money
+
+
+Brunhilde von Hoof		crazy bitch
+
+
+Comrade Vasquez			lisping guy
+
+
+Donald Pinch			scary guy
+
+
+Dr. Steinschneider		just crazy
+
+
+El Diablo				face tatooed
+
+
+Evita Vasquez			dangerous Cutie
+
+
+Igor Fedorov			some russian
+
+
+Keith Preston			some texan
+
+
+Leon Kane				suportiv backstabber
+
+
+Lord Chuffney			just british
+
+
+Lord Oaksworth			some kind of royal
+
+
+Marco Moreno			Suspicious Farmer
+
+
+Miss Pinaple			woman from the christmas party
+			compassionate_gentleman 
+			snuggler
+			
+nick Richards			American Friend
+
+
+Penultimo				Loyal Advisor
+
+
+Reverend Esteban		Soul of Tropico
+
+
+Rodriguez				got a big hat
+
+
+Rudolph Thompson		Mr. USA
+
+
+Santana					generallisimo
+
+
+Sheik Sallim			Arabian Friend
+
+
+Sunny Flowers 			Flower of Tropico
+
+
+The Shadow				Who?
+			prince_of_terror 
+			humble 
+			incognito
+
+Veronica Veneno			Head of Industry
+
+
+Yu Li 					Chinese Friend
+
+color = { 152  140  191 } #tropico
+
+create_country_leader = {
+	name = "Colonial Government"
+	desc = "POLITICS_JOSE_AGRIPINO_BARNET_DESC"
+	picture = "TPO_colony.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		colony_of_tropico
+	}
+}
+
+create_country_leader = {
+	name = "Minestry of Colonial Affears"
+	desc = "POLITICS_JOSE_AGRIPINO_BARNET_DESC"
+	picture = "TPO_colony.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		colony_of_tropico
+	}
+}
+
+create_country_leader = {
+	name = "Self-governing Colony"
+	desc = "POLITICS_JOSE_AGRIPINO_BARNET_DESC"
+	picture = "TPO_colony.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		colony_of_tropico
+	}
+}
+create_country_leader = {
+	name = "Reich Protectorate of Tropico"
+	desc = "POLITICS_JOSE_AGRIPINO_BARNET_DESC"
+	picture = "TPO_colony.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		colony_of_tropico
+	}
+}

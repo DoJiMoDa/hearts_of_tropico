@@ -1,0 +1,188 @@
+﻿division_template = {
+	name = "Brigada de El Presidente"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		artillery_brigade = { x = 0 y = 2}
+	}
+}
+division_template = {
+	name = "Brigada de Tropico"  
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+
+	division= {	
+		name = "1a Brigada de Presidente"
+		location = 13229
+		division_template = "Brigada de El Presidente"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	
+	division= {	
+		name = "1a Brig. de Juanito'"
+		location = 13226
+		division_template = "Brigada de Tropico" 
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	
+	division= {	
+		name = "1a Brig. de Moreno'"
+		location = 13220
+		division_template = "Brigada de Tropico" 
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	
+	division= {	
+		name = "1a Brig. de Toucan'"
+		location = 13218
+		division_template = "Brigada de Tropico" 
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	
+	division= {	
+		name = "1a Brig. de Llama'"
+		location = 13230
+		division_template = "Brigada de Tropico" 
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+
+
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Trading Fleet"			
+		naval_base = 13222
+		
+		task_force = {				
+			name = "Tropico Navy I"
+			location = 13225
+			ship = { name = "Santa Ana" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TPO} } }
+			ship = { name = "San Cristobal" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TPO } } }
+			ship = { name = "San Juan Bautista" definition = destroyer equipment = { light_cruiser_1 = { amount = 1 owner = TPO } } }
+			ship = { name = "San Pedro" definition = destroyer equipment = { light_cruiser_1 = { amount = 1 owner = TPO } } } 
+			ship = { name = "El Presidente" pride_of_the_fleet = yes definition = battleship equipment = { battleship_1 = { amount = 1 owner = TPO } } } 
+		}	
+		
+		task_force = {				
+			name = "Tropico Navy II"
+			location = 13219 
+			ship = { name = "San Buenaventura" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TPO} } }
+			ship = { name = "Santiago el Mayor" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TPO } } }
+			ship = { name = "San Felipe y Santiago" definition = destroyer equipment = { light_cruiser_1 = { amount = 1 owner = TPO } } }
+			ship = { name = "Asunción" definition = destroyer equipment = { light_cruiser_1 = { amount = 1 owner = TPO } } } 
+			ship = { name = "El Llama" definition = battleship equipment = { heavy_cruiser_1 = { amount = 1 owner = TPO } } } 
+		}
+		
+		task_force = {				
+			name = "Tropico Navy III"
+			location = 13223 
+			ship = { name = "Nuestra Señora del Barrio" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TPO} } }
+			ship = { name = "San Medel y Celedon" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TPO } } }
+			ship = { name = "Santa Anna" definition = destroyer equipment = { light_cruiser_1 = { amount = 1 owner = TPO } } }
+			ship = { name = "Nuestra Señora de Begoña" definition = destroyer equipment = { light_cruiser_1 = { amount = 1 owner = TPO } } } 
+			ship = { name = "El Erizo" definition = battleship equipment = { heavy_cruiser_1 = { amount = 1 owner = TPO } } } 
+		}
+		
+		task_force = {				
+			name = "Tropico Navy IV"
+			location = 13231 
+			ship = { name = "La Trinidad Bogitar" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TPO} } }
+			ship = { name = "La Santa Catalina " definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TPO } } }
+			ship = { name = "San Batista" definition = destroyer equipment = { light_cruiser_1 = { amount = 1 owner = TPO } } }
+			ship = { name = "Patache San Antonio de Padua" definition = destroyer equipment = { light_cruiser_1 = { amount = 1 owner = TPO } } } 
+			ship = { name = "El Tucan" definition = battleship equipment = { heavy_cruiser_1 = { amount = 1 owner = TPO } } } 
+		}
+		
+		task_force = {				
+			name = "Iguanas"
+			location = 13222 
+			ship = { name = "Not a Submarine 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = TPO} } }
+			ship = { name = "Not a Submarine 2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = TPO} } }
+			ship = { name = "Not a Submarine 3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = TPO} } }
+			ship = { name = "Not a Submarine 4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = TPO} } }
+			ship = { name = "Not a Submarine 5" definition = submarine equipment = { submarine_1 = { amount = 1 owner = TPO} } }
+			ship = { name = "Not a Submarine 6" definition = submarine equipment = { submarine_1 = { amount = 1 owner = TPO} } }
+			ship = { name = "Not a Submarine 7" definition = submarine equipment = { submarine_1 = { amount = 1 owner = TPO} } }
+			ship = { name = "Not a Submarine 8" definition = submarine equipment = { submarine_1 = { amount = 1 owner = TPO} } }
+			ship = { name = "Not a Submarine 9" definition = submarine equipment = { submarine_1 = { amount = 1 owner = TPO} } }
+			ship = { name = "Not a Submarine 10" definition = submarine equipment = { submarine_1 = { amount = 1 owner = TPO} } }	
+		}
+		
+	}
+
+}
+air_wings = {
+			
+				795 = { 
+					
+						transport_plane_equipment_1 =  {		
+						owner = "TPO" 
+						amount = 20
+					}
+					name = "Tropico Airlines"
+
+					fighter_equipment_0 = {		
+						owner = "TPO" 
+						amount = 50
+					}
+					name = "Tropico Flightschool"
+					}
+}
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "TPO"
+		}
+		requested_factories = 1
+		progress = 0.05
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "TPO" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "TPO" 
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+	
+		add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "TPO"
+		}
+		requested_factories = 2
+		progress = 0.35
+		efficiency = 50
+	}
+
+}

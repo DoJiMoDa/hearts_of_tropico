@@ -1,0 +1,34 @@
+﻿division_template = {
+	name = "Guadeloupe Volunteers"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 2 }
+	
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+
+
+units = {
+
+	division= {	
+		name = "Guadeloupe Park Ranger"
+		location = 9377
+		division_template = "Guadeloupe Volunteers"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	
+	add_equipment = { amount = 220 equipment_name = GDL_infantry_equipment_0}
+	add_equipment = { amount = 130 equipment_name = TPO_infantry_equipment_0}	
+	add_equipment = { amount = 15 equipment_name = CUB_motorized_equipment_0}
+	add_equipment = { amount = 10 equipment_name = DOM_motorized_equipment_0}
+	add_equipment = { amount = 25 equipment_name = TPO_motorized_equipment_0}	
+	add_equipment = { amount = 40 equipment_name = GDL_support_equipment_0}
+	}
+}

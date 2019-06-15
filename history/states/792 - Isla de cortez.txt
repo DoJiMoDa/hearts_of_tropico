@@ -1,0 +1,38 @@
+state={
+	id=792
+	name="STATE_792"
+	manpower = 374299
+	
+	state_category = rural
+
+		resources={
+				oil= 21
+				steel = 16 
+				rubber = 26
+				tungsten = 11
+				aluminium = 13
+				chromium = 16
+			  }
+
+	history={
+		add_core_of = TPO
+		owner = TPO
+		victory_points = {
+			13218 2
+		}
+		victory_points = {
+			13228 1
+		}
+		buildings = {
+			industrial_complex = 1
+			arms_factory = 1
+			infrastructure = 5
+			
+		}
+	}
+
+	provinces={
+		13228
+		13218
+	}
+}

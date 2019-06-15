@@ -1,0 +1,61 @@
+#################
+#### Tropico ####
+#################
+
+TPO_colonial = {
+	icon = generic_democracy
+
+	picture = decision_category_eng_appeal_to_imperial_loyalists.dds
+
+	allowed = {
+		tag = TPO
+	}
+
+	visible = {original_tag = TPO}
+}
+
+TPO_world_war = {
+	icon = generic_fascism
+
+	picture = decision_category_usa_intervention_mandate.dds
+
+	allowed = {
+		tag = TPO
+	}
+
+	visible = { AND = {original_tag = TPO
+					   date > 1939.09.01
+					  }
+		}
+}
+
+TPO_cold_war= {
+	icon = generic_communism
+
+	picture = GFX_decision_category_sov_great_patriotic_war.dds
+
+	
+	allowed = {
+		tag = TPO
+	}
+
+	visible = { AND = {original_tag = TPO
+					   date > 1945.05.02
+					  }
+		}
+}
+
+TPO_prospecting= {
+	icon = generic_prospect_for_resources
+
+	picture = GFX_decision_hol_draw_up_staff_plans.dds
+
+	
+	allowed = {
+		tag = TPO
+	}
+
+	visible = {
+		original_tag = TPO
+	}
+}

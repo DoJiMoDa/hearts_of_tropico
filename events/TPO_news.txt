@@ -1,0 +1,43 @@
+﻿############################
+###### tropico News ########
+############################
+
+add_namespace = tropico
+
+		#el_presidente
+news_event = {
+	id = tropico.100
+	title = tropico.100.t
+	desc = tropico.100.d
+	picture = GFX_tropico_speech
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = tropico.100.b
+		trigger = { TAG = TPO
+					TAG = IDH			
+					TAG = IEN			
+					TAG = IRO			
+					TAG = PCO			
+					TAG = PCU			
+					TAG = CDF			
+								}
+	}
+	option = {
+		name = tropico.100.a
+		trigger = {
+			NOT = {
+				TAG = TPO
+				TAG = IDH			
+				TAG = IEN			
+				TAG = IRO			
+				TAG = PCO			
+				TAG = PCU			
+				TAG = CDF
+			}
+		}
+	}
+}

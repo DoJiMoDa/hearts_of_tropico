@@ -1,0 +1,594 @@
+TPO_prospecting = {
+#################
+###### Oil ######
+#################
+	
+	develop_n_BAH_oil_deposits = { #690
+		
+		icon = oil
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			state = 690
+		}
+
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 690
+			controls_state = 690
+		}
+
+		visible = {
+			owns_state = 690
+			controls_state = 690
+
+		}
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 0
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+        690 = {add_resource = {type = oil amount = 6}}
+		}
+	}
+	
+	develop_s_BAH_oil_deposits = { #693
+		
+		icon = oil
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			state = 693
+		}
+
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 693
+			controls_state = 693
+		}
+
+		visible = {
+			owns_state = 693
+			controls_state = 693
+
+		}
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+        693 = {add_resource = {type = oil amount = 6}}
+		}
+	}
+
+######################
+###### Tungsten ######
+######################
+	
+	develop_trinidad_tungsten_deposits = { #691
+		
+		icon = tungsten
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			state = 691
+		}
+
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 691
+			controls_state = 691
+		}
+
+		visible = {
+			owns_state = 691
+			controls_state = 691
+
+		}
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+        691 = {add_resource = {type = tungsten amount = 6}}
+		}
+	}
+	
+	
+	develop_cuba_tungsten_deposits = { #315
+		
+		icon = tungsten
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			state = 315
+		}
+
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 315
+			controls_state = 315
+		}
+
+		visible = {
+			owns_state = 315
+			controls_state = 315
+
+		}
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+        315 = {add_resource = {type = tungsten amount = 6}}
+		}
+	}
+	
+	develop_jameica_tungsten_deposits = { #689
+		
+		icon = tungsten
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			state = 689
+		}
+
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 689
+			controls_state = 689
+		}
+
+		visible = {
+			owns_state = 689
+			controls_state = 689
+
+		}
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+        689 = {add_resource = {type = tungsten amount = 6}}
+		}
+	}
+	
+###################
+###### Steel ######
+###################	
+	develop_windward_steel_deposits = { #692
+		
+		icon = steel
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			state = 692
+		}
+
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 692
+			controls_state = 692
+		}
+
+		visible = {
+			owns_state = 692
+			controls_state = 692
+
+		}
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+        692 = {add_resource = {type = steel amount = 6}}
+		}
+	}
+	
+	develop_haiti_steel_deposits = { #318
+		
+		icon = steel
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			state = 318
+		}
+
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 318
+			controls_state = 318
+		}
+
+		visible = {
+			owns_state = 318
+			controls_state = 318
+
+		}
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+        318 = {add_resource = {type = steel amount = 6}}
+		}
+	}
+	
+	develop_puerto_rico_steel_deposits = { #686
+		
+		icon = steel
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			state = 686
+		}
+
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 686
+			controls_state = 686
+		}
+
+		visible = {
+			owns_state = 686
+			controls_state = 686
+
+		}
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+        686 = {add_resource = {type = steel amount = 6}}
+		}
+	}
+	
+	develop_cuba_rico_steel_deposits = { #315
+		
+		icon = steel
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			state = 315
+		}
+
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 315
+			controls_state = 315
+		}
+
+		visible = {
+			owns_state = 315
+			controls_state = 315
+
+		}
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+        315 = {add_resource = {type = steel amount = 6}}
+		}
+	}
+	
+	develop_antilles_steel_deposits = { #308
+		
+		icon = steel
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			state = 308
+		}
+
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 308
+			controls_state = 308
+		}
+
+		visible = {
+			owns_state = 308
+			controls_state = 308
+
+		}
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+        308 = {add_resource = {type = steel amount = 6}}
+		}
+	}
+#######################
+###### Aluminium ######
+#######################
+	develop_dom_rep_alumium_deposits = { #319
+		
+		icon = aluminium
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			state = 319
+		}
+
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 319
+			controls_state = 319
+		}
+
+		visible = {
+			owns_state = 319
+			controls_state = 319
+
+		}
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+        319 = {add_resource = {type = aluminium amount = 6}}
+		}
+	}
+	
+	develop_FRA_alumium_deposits = { #694
+		
+		icon = aluminium
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			state = 694
+		}
+
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 694
+			controls_state = 694
+		}
+
+		visible = {
+			owns_state = 694
+			controls_state = 694
+
+		}
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+        694 = {add_resource = {type = aluminium amount = 6}}
+		}
+	}
+####################
+###### Rubber ######
+####################	
+	develop_FRA_rubber_deposits = { #686
+		
+		icon = aluminium
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			state = 686
+		}
+
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 686
+			controls_state = 686
+		}
+
+		visible = {
+			owns_state = 686
+			controls_state = 686
+
+		}
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+        686 = {add_resource = {type = aluminium amount = 6}}
+		}
+	}
+######################
+###### Chromium ######
+######################	
+develop_FRA_chromium_deposits = { #695
+		
+		icon = aluminium
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			state = 695
+		}
+
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 695
+			controls_state = 695
+		}
+
+		visible = {
+			owns_state = 695
+			controls_state = 695
+
+		}
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+        695 = {add_resource = {type = aluminium amount = 6}}
+		}
+	}
+
+}

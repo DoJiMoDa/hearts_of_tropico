@@ -1,0 +1,112 @@
+ideas = {
+
+	political_advisor={
+			TPO_the_shadow={ allowed={tag=TPO } 		traits={TPO_force} ai_will_do={ factor=1 } }
+			
+			TPO_miss_pineapple={ allowed={ tag=TPO } 	available ={has_completed_focus = caribbean_university} traits={ TPO_honey_trap } ai_will_do={ factor=1 } }
+			
+			TPO_leon_kane={ allowed={ tag=TPO } 		traits={ TPO_oppertunist } ai_will_do={ factor=1 } }
+			
+			TPO_veronica_veneno={ allowed={ tag=TPO } 	traits={ TPO_businesswoman } ai_will_do={ factor=1 } }
+			
+			TPO_antonio_lopez={ allowed={ tag=TPO }		traits={ TPO_businessman} ai_will_do={ factor=1 } }
+			
+			TPO_ambassador_crane={ allowed={ tag=TPO }	available = {has_completed_focus = vae_victis} traits={ TPO_ambassador} ai_will_do={ factor=1 } }
+			
+			TPO_penultimo={ allowed={ tag=TPO } 		traits={ TPO_right_hand } ai_will_do={ factor=1 } }
+			
+			TPO_brunhilde_von_hoof={ allowed={ tag=TPO }traits={ TPO_bureaucracy_monster democratic_reformer} ai_will_do={ factor=1 } }
+			
+			TPO_el_diablo={ allowed={ tag=TPO } 		traits={ TPO_nationalist fascist_demagogue} ai_will_do={ factor=1 } }
+			
+			TPO_marco_moreno={ allowed={ tag=TPO } 		available ={has_completed_focus = haiti}traits={ TPO_revolutionary communist_revolutionary} ai_will_do={ factor=1 } }
+			
+			TPO_adriana_diaz={ allowed={ tag=TPO } 		available ={has_completed_focus = caribbean_union}		traits={ TPO_queen_of_industry } ai_will_do={ factor=1 } }
+			
+			TPO_nick_richards={ allowed={ tag=TPO } 	traits={ TPO_economist } ai_will_do={ factor=1 } }
+			
+			TPO_rudolph_thompson={ allowed={ tag=TPO } 	traits={TPO_former_president} ai_will_do={ factor=1 } }
+			
+			TPO_sheik_salim={ allowed={ tag=TPO } 		traits={ TPO_sheik } ai_will_do={ factor=1 } }
+			
+			TPO_sunny_flowers={ allowed={ tag=TPO } 	traits={TPO_news_ancor} ai_will_do={ factor=1 } }
+			
+			TPO_yu_li={ allowed={ tag=TPO } 			traits={TPO_prefectionist} ai_will_do={ factor=1 } }
+			}
+			
+	theorist={
+			TPO_albert_zweistein={ allowed={ tag=TPO }	available ={has_completed_focus = science}	traits={ TPO_mad_scientist} ai_will_do={ factor=1 } }
+			
+			TPO_reverend_esteban={ allowed={ tag=TPO }	available ={has_completed_focus = cities_of_gold}	traits={ TPO_soul_of_tropico} ai_will_do={ factor=1 } }
+			
+			TPO_dr_steinschneider={ allowed={ tag=TPO } available ={has_completed_focus = caribbean_university}	traits={ TPO_blast_off_engineer} ai_will_do={ factor=1 } }			
+			}
+
+	army_chief={
+			TPO_santana={ allowed={ tag=TPO }			available ={has_completed_focus = cuba}			traits={ TPO_generalissimo } ai_will_do={ factor=1 } }
+			
+			TPO_comrade_vasquez={ allowed={ tag=TPO } 	available ={has_completed_focus = haiti}		traits={ TPO_rebel_leader } ai_will_do={ factor=1 } }
+			}
+	navy_chief={
+			TPO_lord_oaksworth={ allowed={ tag=TPO } 	available ={has_completed_focus = TRI_BAS}	traits={ TPO_tealover } ai_will_do={ factor=1 } }
+			
+			TPO_igor_fedorov={ allowed={ tag=TPO } 		traits={  TPO_admiral_vodka } ai_will_do={ factor=1 } }
+			}
+	air_chief={
+			TPO_donald_pynch={ allowed={ tag=TPO } 		traits={ TPO_iron_hearth} ai_will_do={ factor=1 } }
+			
+			TPO_keith_preston={ allowed={ tag=TPO } 	available ={has_completed_focus = united_tarifs} traits={TPO_flight_instructor} ai_will_do={ factor=1 } }
+			}
+	high_command={
+			TPO_rodriguez={ allowed={ tag=TPO } 		traits={ TPO_showoff} ai_will_do={ factor=1 } }
+			
+			TPO_evita_vasquez={ allowed={ tag=TPO } 	traits={ TPO_rose_of_tropico} ai_will_do={ factor=1 } }
+			
+			TPO_agent_sasha={ allowed={ tag=TPO } 		traits={ TPO_russian_spy} ai_will_do={ factor=1 } }
+			
+			TPO_lord_chuffney={ allowed={ tag=TPO } 	available ={has_completed_focus = BAH_JAM}	traits={ TPO_knight} ai_will_do={ factor=1 } }
+			}
+
+	naval_manufacturer={
+			designer = yes
+			tropico_cruise={ allowed={ TAG=TPO } research_bonus={ naval_equipment=0.10 } traits={ raiding_fleet_naval_manufacturer } }
+			
+			tropico_smugglers_bay={ allowed={ TAG=TPO } research_bonus={ naval_equipment=0.10 } traits={ atlantic_fleet_naval_manufacturer } picture=generic_naval_manufacturer_3 }
+			
+			tropico_fisherman={ allowed={ TAG=TPO } research_bonus={ naval_equipment=0.10 } traits={ convoy_escort_naval_manufacturer } picture=generic_naval_manufacturer_1 }
+			}
+
+	aircraft_manufacturer={
+			designer = yes
+			tropico_zeplin={ allowed={ TAG=TPO } research_bonus={ air_equipment=0.10 } traits={ CAS_manufacturer } }
+			
+			tropico_airlines={ allowed={ TAG=TPO } research_bonus={ air_equipment=0.10 } traits={ light_aircraft_manufacturer } }
+			
+			tropico_paragliders={ allowed={ TAG=TPO } research_bonus={ air_equipment=0.10 } traits={ medium_aircraft_manufacturer } }
+			}
+	materiel_manufacturer={
+			designer = yes
+			tropico_arms={ allowed={ TAG=TPO } research_bonus={ infantry_weapons=0.10 } traits={ infantry_equipment_manufacturer } }
+			
+			tropico_cannery={ allowed={ TAG=TPO } research_bonus={ artillery=0.10 } traits={ artillery_manufacturer } }
+			
+			tropico_furniture={ allowed={ TAG=TPO } research_bonus={ artillery=0.10 } traits={ artillery_manufacturer } }
+			
+			}
+	industrial_concern={
+			designer = yes
+			tropico_electronics={ allowed={ TAG=TPO }    research_bonus = {industry = 0.10 } traits={ industrial_concern } }
+			
+			tropico_jewlery_ag={ allowed={ TAG=TPO }    research_bonus = {  industry = 0.10    } traits={ industrial_concern } picture=generic_tank_manufacturer_3 }
+			
+			tropico_lumbers={ allowed={ TAG=TPO }    research_bonus = { electronics = 0.10} traits={ electronics_concern } }
+			}
+	tank_manufacturer={
+			designer = yes
+			tropico_cars={ allowed={ TAG=TPO } research_bonus={ armor=0.10 } traits={ medium_tank_manufacturer } }
+			
+			tropico_transports={ allowed={ TAG=TPO } research_bonus={ armor=0.10 } traits={ fast_tank_manufacturer } picture=generic_tank_manufacturer_3 }
+			
+			tropico_bus={ allowed={ TAG=TPO } research_bonus={ armor=0.10 } traits={ medium_tank_manufacturer } }
+			}
+}

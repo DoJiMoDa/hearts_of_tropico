@@ -1,0 +1,38 @@
+state={
+	id=788
+	name="STATE_788"
+	manpower = 396299
+	
+	state_category = rural
+
+	resources={
+				oil= 6
+				steel = 9 
+				rubber = 11
+				tungsten = 4
+				aluminium = 4
+				chromium = 6
+			  }
+
+	history={
+		add_core_of = TPO
+		owner = TPO
+		victory_points = {
+			13219 1
+		}
+		buildings = {
+			industrial_complex = 1
+			dockyard = 1
+			infrastructure = 5
+			
+			13219 = {
+					naval_base = 2
+					coastal_bunker = 4
+					}
+		}
+	}
+
+	provinces={
+		13219
+	}
+}

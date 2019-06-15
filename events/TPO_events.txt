@@ -1,0 +1,1090 @@
+﻿############################
+###### Focus   Events ######
+############################
+
+add_namespace = tropico
+add_namespace = tpo_usa
+
+country_event = {
+	id = tropico.1					
+	title = tropico.1.t
+	desc = tropico.1.d
+	picture = GFX_penultimo
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.1.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	
+	}
+}
+
+country_event = {
+	id = tropico.2 
+	title = tropico.2.t
+	desc = tropico.2.d
+	picture = GFX_penultimo
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.2.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.3 
+	title = tropico.3.t
+	desc = tropico.3.d
+	picture = GFX_penultimo
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.3.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.4 
+	title = tropico.4.t
+	desc = tropico.4.d
+	picture = GFX_penultimo
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.4.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.5
+	title = tropico.5.t
+	desc = tropico.5.d
+	picture = GFX_penultimo
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.5.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.6
+	title = tropico.6.t
+	desc = tropico.6.d
+	picture = GFX_penultimo
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.6.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.7
+	title = tropico.7.t
+	desc = tropico.7.d
+	picture = GFX_penultimo
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.7.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.8
+	title = tropico.8.t
+	desc = tropico.8.d
+	picture = GFX_penultimo
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.8.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.9
+	title = tropico.9.t
+	desc = tropico.9.d
+	picture = GFX_penultimo
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.9.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.10
+	title = tropico.10.t
+	desc = tropico.10.d
+	picture = GFX_penultimo
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.10.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.11
+	title = tropico.11.t
+	desc = tropico.11.d
+	picture = GFX_penultimo
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.11.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.12
+	title = tropico.12.t
+	desc = tropico.12.d
+	picture = GFX_penultimo
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.12.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.13
+	title = tropico.13.t
+	desc = tropico.13.d
+	picture = GFX_penultimo
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.13.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.14
+	title = tropico.14.t
+	desc = tropico.14.d
+	picture = GFX_penultimo
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.14.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.15
+	title = tropico.15.t
+	desc = tropico.15.d
+	picture = GFX_penultimo
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.15.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.16
+	title = tropico.16.t
+	desc = tropico.16.d
+	picture = GFX_penultimo
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.16.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.17
+	title = tropico.17.t
+	desc = tropico.17.d
+	picture = GFX_penultimo
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.17.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.18
+	title = tropico.18.t
+	desc = tropico.18.d
+	picture = GFX_penultimo
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.18.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.19
+	title = tropico.19.t
+	desc = tropico.19.d
+	picture = GFX_penultimo
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.19.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.20
+	title = tropico.20.t
+	desc = tropico.20.d
+	picture = GFX_penultimo
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.20.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.21
+	title = tropico.21.t
+	desc = tropico.21.d
+	picture = GFX_penultimo
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.21.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.22
+	title = tropico.22.t
+	desc = tropico.22.d
+	picture = GFX_penultimo
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.22.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.23
+	title = tropico.23.t
+	desc = tropico.23.d
+	picture = GFX_penultimo
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.23.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.24
+	title = tropico.24.t
+	desc = tropico.24.d
+	picture = GFX_penultimo
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.24.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.25
+	title = tropico.25.t
+	desc = tropico.25.d
+	picture = GFX_penultimo
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.25.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.26
+	title = tropico.26.t
+	desc = tropico.26.d
+	picture = GFX_penultimo
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.26.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.27
+	title = tropico.27.t
+	desc = tropico.27.d
+	picture = GFX_penultimo
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.27.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.28
+	title = tropico.28.t
+	desc = tropico.28.d
+	picture = GFX_penultimo
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.28.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.29
+	title = tropico.29.t
+	desc = tropico.29.d
+	picture = GFX_penultimo
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.29.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.30
+	title = tropico.30.t
+	desc = tropico.30.d
+	picture = GFX_penultimo
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.30.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.31
+	title = tropico.31.t
+	desc = tropico.31.d
+	picture = GFX_penultimo
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.31.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.32
+	title = tropico.32.t
+	desc = tropico.32.d
+	picture = GFX_shadow
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.32.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.33
+	title = tropico.33.t
+	desc = tropico.33.d
+	picture = GFX_shadow
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.33.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.34
+	title = tropico.34.t
+	desc = tropico.34.d
+	picture = GFX_shadow
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.34.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.35
+	title = tropico.35.t
+	desc = tropico.35.d
+	picture = GFX_shadow
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.35.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.36
+	title = tropico.36.t
+	desc = tropico.36.d
+	picture = GFX_shadow
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.36.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.37
+	title = tropico.37.t
+	desc = tropico.37.d
+	picture = GFX_shadow
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.37.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.38
+	title = tropico.38.t
+	desc = tropico.38.d
+	picture = GFX_op_germany
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.38.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.39
+	title = tropico.39.t
+	desc = tropico.39.d
+	picture = GFX_op_germany
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.39.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.40
+	title = tropico.40.t
+	desc = tropico.40.d
+	picture = GFX_op_germany
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.40.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.41
+	title = tropico.41.t
+	desc = tropico.41.d
+	picture = GFX_op_germany
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.41.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.42
+	title = tropico.42.t
+	desc = tropico.42.d
+	picture = GFX_op_allies
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.42.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.43
+	title = tropico.43.t
+	desc = tropico.43.d
+	picture = GFX_op_allies
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.43.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.44
+	title = tropico.44.t
+	desc = tropico.44.d
+	picture = GFX_op_allies
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.44.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.45
+	title = tropico.45.t
+	desc = tropico.45.d
+	picture = GFX_op_allies
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.45.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.46
+	title = tropico.46.t
+	desc = tropico.46.d
+	picture = GFX_op_soviet
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.46.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.47
+	title = tropico.47.t
+	desc = tropico.47.d
+	picture = GFX_op_soviet
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.47.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.48
+	title = tropico.48.t
+	desc = tropico.48.d
+	picture = GFX_op_soviet
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.48.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.49
+	title = tropico.49.t
+	desc = tropico.49.d
+	picture = GFX_op_soviet
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.49.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.50
+	title = tropico.50.t
+	desc = tropico.50.d
+	picture = GFX_op_china
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.50.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.51
+	title = tropico.51.t
+	desc = tropico.51.d
+	picture = GFX_op_china
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.51.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.52
+	title = tropico.52.t
+	desc = tropico.52.d
+	picture = GFX_op_china
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.52.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tropico.53
+	title = tropico.53.t
+	desc = tropico.53.d
+	picture = GFX_op_china
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tropico.53.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tpo_usa.1
+	title = tpo_usa.1.t
+	desc = tpo_usa.1.d
+	picture = GFX_penultimo
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tpo_usa.1.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tpo_usa.2
+	title = tpo_usa.2.t
+	desc = tpo_usa.2.d
+	picture = GFX_penultimo
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tpo_usa.2.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tpo_usa.3
+	title = tpo_usa.3.t
+	desc = tpo_usa.3.d
+	picture = GFX_penultimo
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tpo_usa.3.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = tpo_usa.4
+	title = tpo_usa.4.t
+	desc = tpo_usa.4.d
+	picture = GFX_penultimo
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = tpo_usa.4.a
+		ai_chance = { factor = 90 }
+		
+		hidden_effect = {
+		}
+	}
+}

@@ -1,0 +1,1941 @@
+focus_tree = {
+	id = tropico_tree
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = TPO
+		}
+	}
+	
+	default = yes
+	reset_on_civilwar = no
+	
+continuous_focus_position = { x = 700 y = 1050 }
+
+################################################################################################################
+	focus = {
+		id = el_presidente
+		icon = GFX_TPO_el_pres
+		x = 10
+		y = 0
+		cost = 0.5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			 country_event = { 
+			 id= tropico.100 }
+			}
+	}
+##############################################################################################################
+	focus = {
+		id = caribbean_dream
+		prerequisite = {focus = el_presidente}
+		icon = GFX_TPO_caribbean_dream
+		relative_position_id = el_presidente
+		x = 0
+		y = 2
+		cost = 2
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+				country_event = { id = tropico.1}
+			}
+		}
+##########################################################################################################	
+focus = {
+		id = vae_victis
+		prerequisite = {focus = caribbean_dream}
+		icon = GFX_TPO_vae_victis
+		relative_position_id = caribbean_dream
+		x = 5
+		y = 1
+		cost = 3.7
+		
+		available = { FRA = {has_opinion = {target = TPO value > 29}}
+					  USA = {has_opinion = {target = TPO value > 29}}
+					  HOL = {has_opinion = {target = TPO value > 29}}
+					}
+		
+		available_if_capitulated = yes
+		completion_reward = {
+					country_event = { id = tropico.2 }
+					USA={release = PUE}
+			}
+		}
+
+focus = {
+		id = vae_victis_HOL
+		prerequisite = {focus = vae_victis}
+		icon = GFX_TPO_vae_victis_HOL
+		relative_position_id = vae_victis
+		x = 1
+		y = 1
+		cost = 3.7
+		available = {			  
+						HOL = {has_opinion = {target = TPO value > 29}
+							   has_war = yes}  
+					}
+					
+		available_if_capitulated = yes
+		bypass={ CRC ={country_exists = yes}
+			   }
+		completion_reward = {
+					country_event = { id= tropico.3 }
+					HOL={release = CRC}
+					}
+	}
+	
+focus = {
+		id = vae_victis_FRA
+		prerequisite = {focus = vae_victis}
+		icon = GFX_TPO_vae_victis_FRA
+		relative_position_id = vae_victis
+		x = -1
+		y = 1
+		cost = 3.7
+		available = {			  
+						FRA = {has_opinion = {target = TPO value > 29}
+							   has_war = yes}
+							   }
+						
+					
+		
+		bypass={ GDL ={country_exists = yes}
+			   }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+					country_event = { id= tropico.4 }
+					FRA={release = GDL}
+			}
+	}
+	
+########################################################################################################
+focus = {
+		id = british
+		prerequisite = {focus = caribbean_dream}
+		icon = GFX_TPO_british
+		relative_position_id = caribbean_dream
+		x = -5
+		y = 1
+		cost = 2.9
+		
+		available = {And={ ENG = {has_opinion = {target = TPO value > 29}
+								  has_war = yes}	
+							}
+							
+						}
+		
+		available_if_capitulated = yes
+		completion_reward = {country_event = { id= tropico.5}
+				}
+		}
+
+focus = {
+		id = BAH_JAM
+		prerequisite = {focus = british}
+		icon = GFX_TPO_BAH_JAM
+		relative_position_id = british
+		x = -1
+		y = 1
+		cost = 3.6
+		
+		available = {AND={ ENG = {has_opinion = {target = TPO value > 29}}
+						   ENG={has_war = yes}
+						 }
+					
+					}
+		bypass={ JAM ={country_exists = yes}
+				 BAH ={country_exists = yes}
+			   }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+							country_event = { id= tropico.6 }
+							ENG={release = JAM
+								 release = BAH}
+							}
+		}	
+		
+focus = {
+		id = TRI_BAS
+		prerequisite = {focus = british}
+		icon = GFX_TPO_TRI_BAS
+		relative_position_id = british
+		x = 1
+		y = 1
+		cost = 3.6
+		
+		available = {AND={ ENG = {has_opinion = {target = TPO value > 29}}
+						   ENG={has_war = yes}
+						 }
+					}
+		bypass={ TRI ={country_exists = yes}
+				 BAS ={country_exists = yes}
+			   }	
+			   
+		available_if_capitulated = yes
+		completion_reward = {
+							country_event = { id= tropico.7 }
+							ENG={release = TRI
+								 release = BAS}
+							}
+		}
+####################################################################################################
+focus = {
+		id = local_powers
+		prerequisite = {focus = caribbean_dream}
+		icon = GFX_TPO_local_powers
+		relative_position_id = caribbean_dream
+		x = 0
+		y = 1
+		cost = 5
+		
+		available = {And={ DOM = {has_opinion = {target = TPO value > 29}}
+						   CUB = {has_opinion = {target = TPO value > 29}}
+						   HAI = {has_opinion = {target = TPO value > 29}}
+							}
+							
+						}
+		
+		available_if_capitulated = yes
+		completion_reward = {country_event = { id= tropico.8}}
+		}
+
+focus = {
+		id = cuba
+		prerequisite = {focus = local_powers}
+		icon = GFX_TPO_CUBA
+		relative_position_id = local_powers
+		x = 0
+		y = 1
+		cost = 2.9
+		available={has_equipment = {infantry_equipment > 4499}
+				   has_equipment = {support_equipment > 449}
+				  } 
+		
+		available_if_capitulated = yes
+		completion_reward = {country_event = { id= tropico.9}
+							 add_equipment_to_stockpile = { type = support_equipment amount = -450 }
+							 add_equipment_to_stockpile = { type = infantry_equipment amount = -4500 }
+							}
+		}
+		
+focus = {
+		id = domrep
+		prerequisite = {focus = local_powers}
+		icon = GFX_TPO_domrep
+		relative_position_id = local_powers
+		x = 2
+		y = 1
+		cost = 2.9
+		
+		available={has_equipment = {infantry_equipment > 4499}
+				   has_equipment = {support_equipment > 449}
+				  }
+		
+		available_if_capitulated = yes
+		completion_reward = {country_event = {id= tropico.10}
+							 add_equipment_to_stockpile = { type = support_equipment amount = -450 }
+							 add_equipment_to_stockpile = { type = infantry_equipment amount = -4500 }
+							}
+		}
+		
+		
+focus = {
+		id = haiti
+		prerequisite = {focus = local_powers}
+		icon = GFX_TPO_haiti
+		relative_position_id = local_powers
+		x = -2
+		y = 1
+		cost = 2.9
+		
+		available={has_equipment = {infantry_equipment > 4499}
+				   has_equipment = {support_equipment > 449}
+				  } 
+		
+		available_if_capitulated = yes
+		completion_reward = {country_event = { id= tropico.11}
+							 add_equipment_to_stockpile = { type = support_equipment amount = -450 }
+							 add_equipment_to_stockpile = { type = infantry_equipment amount = -4500 }
+							}
+		}
+		
+		
+		
+		
+####################################################################################################
+focus = {
+		id = caribbean_union
+		prerequisite = {focus = domrep}
+		prerequisite = {focus = cuba}
+		prerequisite = {focus = haiti}
+		prerequisite = {focus = vae_victis_FRA}
+		prerequisite = {focus = vae_victis_HOL}
+		prerequisite = {focus = TRI_BAS}
+		prerequisite = {focus = BAH_JAM}
+		
+		icon = GFX_TPO_TU
+		relative_position_id = local_powers
+		x = 0
+		y = 2
+		cost = 5
+		
+		available = {
+						CUB ={country_exists = yes}
+						BAH ={country_exists = yes}
+						DOM ={country_exists = yes}
+						HAI ={country_exists = yes}
+						JAM ={country_exists = yes}
+						TRI ={country_exists = yes}
+						BAS ={country_exists = yes}
+						CRC ={country_exists = yes}
+						GDL ={country_exists = yes}
+					}
+		
+		available_if_capitulated = yes
+		completion_reward = {country_event = { id= tropico.12}
+							 create_faction = "United Staates of Tropico"
+						     hidden_effect={TPO={set_rule = {can_create_factions = yes}
+											    }
+							}
+						
+							}				
+			}
+
+focus = {
+		id = caribbean_streets
+		prerequisite = {focus = caribbean_union}
+		icon = GFX_TPO_CS
+		relative_position_id = caribbean_union
+		x = 0
+		y = 1
+		cost = 6.5
+		
+		available = {}
+		
+		available_if_capitulated = yes
+		completion_reward = {
+								country_event = { id= tropico.13}
+								691={add_building_construction = {type = infrastructure level = 2 instant_build = yes}
+									 add_extra_state_shared_building_slots = 1}
+								695={add_building_construction = {type = infrastructure level = 2 instant_build = yes}
+									 add_extra_state_shared_building_slots = 1}
+								692={add_building_construction = {type = infrastructure level = 2 instant_build = yes}
+									 add_extra_state_shared_building_slots = 1}
+								694={add_building_construction = {type = infrastructure level = 2 instant_build = yes}
+									 add_extra_state_shared_building_slots = 1}
+								308={add_building_construction = {type = infrastructure level = 2 instant_build = yes}
+									 add_extra_state_shared_building_slots = 1}
+								686={add_building_construction = {type = infrastructure level = 2 instant_build = yes}
+									 add_extra_state_shared_building_slots = 1}
+								319={add_building_construction = {type = infrastructure level = 2 instant_build = yes}
+									 add_extra_state_shared_building_slots = 1}
+								318={add_building_construction = {type = infrastructure level = 2 instant_build = yes}
+									 add_extra_state_shared_building_slots = 1}
+								689={add_building_construction = {type = infrastructure level = 2 instant_build = yes}
+									 add_extra_state_shared_building_slots = 1}
+								315={add_building_construction = {type = infrastructure level = 2 instant_build = yes}
+									 add_extra_state_shared_building_slots = 1}
+								693={add_building_construction = {type = infrastructure level = 2 instant_build = yes}
+									 add_extra_state_shared_building_slots = 1}
+								690={add_building_construction = {type = infrastructure level = 2 instant_build = yes}
+									 add_extra_state_shared_building_slots = 1}
+						  }
+		}
+			
+		
+		
+		
+		
+focus = {
+		id = united_tarifs
+		prerequisite = {focus = caribbean_union}
+		icon = GFX_TPO_UT
+		relative_position_id = caribbean_union
+		x = 2
+		y = 1
+		cost = 6.5
+		
+		available = {}
+							
+						
+		
+		available_if_capitulated = yes
+		completion_reward = {	country_event = { id= tropico.14 }
+								691={add_building_construction = {type = dockyard level = 1 instant_build = yes}
+									 add_extra_state_shared_building_slots = 1}
+								695={add_building_construction = {type = dockyard level = 1 instant_build = yes}
+									 add_extra_state_shared_building_slots = 1}
+								692={add_building_construction = {type = dockyard level = 1 instant_build = yes}
+									 add_extra_state_shared_building_slots = 1}
+								694={add_building_construction = {type = dockyard level = 1 instant_build = yes}
+									 add_extra_state_shared_building_slots = 1}
+								308={add_building_construction = {type = dockyard level = 1 instant_build = yes}
+									 add_extra_state_shared_building_slots = 1}
+								686={add_building_construction = {type = dockyard level = 1 instant_build = yes}
+									 add_extra_state_shared_building_slots = 1}
+								319={add_building_construction = {type = dockyard level = 1 instant_build = yes}
+									 add_extra_state_shared_building_slots = 1}
+								318={add_building_construction = {type = dockyard level = 1 instant_build = yes}
+									 add_extra_state_shared_building_slots = 1}
+								689={add_building_construction = {type = dockyard level = 1 instant_build = yes}
+									 add_extra_state_shared_building_slots = 1}
+								315={add_building_construction = {type = dockyard level = 1 instant_build = yes}
+									 add_extra_state_shared_building_slots = 1}
+								693={add_building_construction = {type = dockyard level = 1 instant_build = yes}
+									 add_extra_state_shared_building_slots = 1}
+								690={add_building_construction = {type = dockyard level = 1 instant_build = yes}
+									 add_extra_state_shared_building_slots = 1}
+		}
+		}
+		
+focus = {
+		id = caribbean_university
+		prerequisite = {focus = caribbean_union}
+		icon = GFX_TPO_education
+		relative_position_id = caribbean_union
+		x = -2
+		y = 1
+		cost = 6.5
+		
+		available = {}
+							
+						
+		
+		available_if_capitulated = yes
+		completion_reward = {
+								country_event = { id= tropico.15 }
+								TPO ={add_research_slot = 1}
+								DOM ={add_research_slot = 1}
+								HAI ={add_research_slot = 1}
+								JAM ={add_research_slot = 1}
+								CUB ={add_research_slot = 1}
+								PUE ={add_research_slot = 1}
+								BAH ={add_research_slot = 1}
+								BAS ={add_research_slot = 1}
+								GDL ={add_research_slot = 1}
+								CRC ={add_research_slot = 1}
+								TRI ={add_research_slot = 1}
+		
+							}
+		}
+		
+focus = {
+		id = caribbean_industry_effort
+		prerequisite = {focus = caribbean_union}
+		icon = GFX_TPO_IE
+		relative_position_id = caribbean_union
+		x = 6
+		y = 1
+		cost = 6.5
+		
+		available = {}
+		
+		available_if_capitulated = yes
+		completion_reward = {
+								country_event = { id= tropico.16 }
+								691={add_building_construction = {type = industrial_complex level = 2 instant_build = yes}
+									 add_extra_state_shared_building_slots = 2}
+								695={add_building_construction = {type = industrial_complex level = 2 instant_build = yes}
+									 add_extra_state_shared_building_slots = 2}
+								692={add_building_construction = {type = industrial_complex level = 2 instant_build = yes}
+									 add_extra_state_shared_building_slots = 2}
+								694={add_building_construction = {type = industrial_complex level = 2 instant_build = yes}
+									 add_extra_state_shared_building_slots = 2}
+								308={add_building_construction = {type = industrial_complex level = 2 instant_build = yes}
+									 add_extra_state_shared_building_slots = 2}
+								686={add_building_construction = {type = industrial_complex level = 2 instant_build = yes}
+									 add_extra_state_shared_building_slots = 2}
+								319={add_building_construction = {type = industrial_complex level = 2 instant_build = yes}
+									 add_extra_state_shared_building_slots = 2}
+								318={add_building_construction = {type = industrial_complex level = 2 instant_build = yes}
+									 add_extra_state_shared_building_slots = 2}
+								689={add_building_construction = {type = industrial_complex level = 2 instant_build = yes}
+									 add_extra_state_shared_building_slots = 2}
+								315={add_building_construction = {type = industrial_complex level = 2 instant_build = yes}
+									 add_extra_state_shared_building_slots = 2}
+								693={add_building_construction = {type = industrial_complex level = 2 instant_build = yes}
+									 add_extra_state_shared_building_slots = 2}
+								690={add_building_construction = {type = industrial_complex level = 2 instant_build = yes}
+									 add_extra_state_shared_building_slots = 2}
+		}
+		}
+		
+focus = {
+		id = caribbean_economy_boost
+		prerequisite = {focus = caribbean_union}
+		icon = GFX_TPO_EB
+		relative_position_id = caribbean_union
+		x = -4
+		y = 1
+		cost = 6.5
+		
+		available = { }
+		
+		available_if_capitulated = yes
+		completion_reward = {	country_event = { id= tropico.17 }
+								691={add_building_construction = {type = arms_factory level = 1 instant_build = yes}
+									 add_extra_state_shared_building_slots = 1}
+								695={add_building_construction = {type = arms_factory level = 1 instant_build = yes}
+									 add_extra_state_shared_building_slots = 1}
+								692={add_building_construction = {type = arms_factory level = 1 instant_build = yes}
+									 add_extra_state_shared_building_slots = 1}
+								694={add_building_construction = {type = arms_factory level = 1 instant_build = yes}
+									 add_extra_state_shared_building_slots = 1}
+								308={add_building_construction = {type = arms_factory level = 1 instant_build = yes}
+									 add_extra_state_shared_building_slots = 1}
+								686={add_building_construction = {type = arms_factory level = 1 instant_build = yes}
+									 add_extra_state_shared_building_slots = 1}
+								319={add_building_construction = {type = arms_factory level = 1 instant_build = yes}
+									 add_extra_state_shared_building_slots = 1}
+								318={add_building_construction = {type = arms_factory level = 1 instant_build = yes}
+									 add_extra_state_shared_building_slots = 1}
+								689={add_building_construction = {type = arms_factory level = 1 instant_build = yes}
+									 add_extra_state_shared_building_slots = 1}
+								315={add_building_construction = {type = arms_factory level = 1 instant_build = yes}
+									 add_extra_state_shared_building_slots = 1}
+								693={add_building_construction = {type = arms_factory level = 1 instant_build = yes}
+									 add_extra_state_shared_building_slots = 1}
+								690={add_building_construction = {type = arms_factory level = 1 instant_build = yes}
+									 add_extra_state_shared_building_slots = 1}
+		
+		}
+		}
+		
+focus = {
+		id = caribbean_defense
+		prerequisite = {focus = caribbean_union}
+		icon = GFX_TPO_CD_army
+		relative_position_id = caribbean_union
+		x = 4
+		y = 1
+		cost = 6.5
+		
+		available = {				
+					}
+		
+		available_if_capitulated = yes
+		completion_reward = {country_event = { id= tropico.18 }
+					hidden_effect={	load_oob = "DOM" 
+									load_oob = "HAI"
+									load_oob = "JAM"
+									load_oob = "CUB"
+									load_oob = "PUE"
+									load_oob = "BAH"
+									load_oob = "BAS"
+									load_oob = "GDL"
+									load_oob = "CRC"
+									load_oob = "TRI" 
+								
+								DOM={give_military_access = TPO} 
+								HAI={give_military_access = TPO}
+								JAM={give_military_access = TPO}
+								CUB={give_military_access = TPO}
+								PUE={give_military_access = TPO}
+								BAH={give_military_access = TPO}
+								BAS={give_military_access = TPO}
+								GDL={give_military_access = TPO}
+								CRC={give_military_access = TPO}
+								TRI={give_military_access = TPO} 
+							  }
+		}
+		}
+		
+focus = {
+		id = united_politics
+		prerequisite = {focus = caribbean_union}
+		icon = GFX_TPO_UP
+		relative_position_id = caribbean_union
+		x = -6
+		y = 1
+		cost = 6.5
+		
+		available = {
+		}
+		
+		available_if_capitulated = yes
+		completion_reward = {country_event = { id= tropico.19 }
+								TPO ={add_political_power = 200}
+								DOM ={add_political_power = 200}
+								HAI ={add_political_power = 200}
+								JAM ={add_political_power = 200}
+								CUB ={add_political_power = 200}
+								PUE ={add_political_power = 200}
+								BAH ={add_political_power = 200}
+								BAS ={add_political_power = 200}
+								GDL ={add_political_power = 200}
+								CRC ={add_political_power = 200}
+								TRI ={add_political_power = 200}
+							}
+		}
+		
+focus = {
+		id = united_states
+		prerequisite = {focus = united_politics}
+		prerequisite = {focus = caribbean_economy_boost}
+		prerequisite = {focus = caribbean_university}
+		prerequisite = {focus = caribbean_streets}
+		prerequisite = {focus = united_tarifs}
+		prerequisite = {focus = caribbean_defense}
+		prerequisite = {focus = caribbean_industry_effort}
+		icon = GFX_TPO_US
+		relative_position_id = caribbean_union
+		x = 0
+		y = 2
+		cost = 21.5
+		
+		available = {	}
+		
+		available_if_capitulated = yes
+		completion_reward = {country_event = { id= tropico.20 }
+								DOM  ={
+										  set_political_party = {
+																	ideology = neutrality
+																	popularity = 100
+																}
+										  create_country_leader = {
+																  name = "Local_government"
+																  desc = "LOCAL_GOVERNMENT"
+																  picture = TPO_colony.dds
+																  expire = "1965.1.1"
+																  ideology =  oligarchism
+																  traits = {part_of_tropico}
+																  }
+										}	
+								HAI  ={
+										  set_political_party = {
+																	ideology = neutrality
+																	popularity = 100
+																}
+										  create_country_leader = {
+																  name = "Local_government"
+																  desc = "LOCAL_GOVERNMENT"
+																  picture = TPO_colony.dds
+																  expire = "1965.1.1"
+																  ideology = oligarchism
+																  traits = {part_of_tropico}
+																  }
+										}
+								JAM  ={
+										  set_political_party = {
+																	ideology = neutrality
+																	popularity = 100
+																}
+										  create_country_leader = {
+																  name = "Local_government"
+																  desc = "LOCAL_GOVERNMENT"
+																  picture = TPO_colony.dds
+																  expire = "1965.1.1"
+																  ideology =  oligarchism
+																  traits = {part_of_tropico}
+																  }
+										}
+								CUB  ={
+										  set_political_party = {
+																	ideology = neutrality
+																	popularity = 100
+																}
+										  create_country_leader = {
+																  name = "Local_government"
+																  desc = "LOCAL_GOVERNMENT"
+																  picture = TPO_colony.dds
+																  expire = "1965.1.1"
+																  ideology =  oligarchism
+																  traits = {part_of_tropico}
+																  }
+										}
+
+								PUE  ={
+										  set_political_party = {
+																	ideology = neutrality
+																	popularity = 100
+																}
+										  create_country_leader = {
+																  name = "Local_government"
+																  desc = "LOCAL_GOVERNMENT"
+																  picture = TPO_colony.dds
+																  expire = "1965.1.1"
+																  ideology =  oligarchism
+																  traits = {part_of_tropico}
+																  }
+										}
+								BAH  ={
+										  set_political_party = {
+																	ideology = neutrality
+																	popularity = 100
+																}
+										  create_country_leader = {
+																  name = "Local_government"
+																  desc = "LOCAL_GOVERNMENT"
+																  picture = TPO_colony.dds
+																  expire = "1965.1.1"
+																  ideology =  oligarchism
+																  traits = {part_of_tropico}
+																  }
+										}
+								BAS  ={
+										  set_political_party = {
+																	ideology = neutrality
+																	popularity = 100
+																}
+										  create_country_leader = {
+																  name = "Local_government"
+																  desc = "LOCAL_GOVERNMENT"
+																  picture = TPO_colony.dds
+																  expire = "1965.1.1"
+																  ideology =  oligarchism
+																  traits = {part_of_tropico}
+																  }
+										}
+								GDL  ={
+										  set_political_party = {
+																	ideology = neutrality
+																	popularity = 100
+																}
+										  create_country_leader = {
+																  name = "Local_government"
+																  desc = "LOCAL_GOVERNMENT"
+																  picture = TPO_colony.dds
+																  expire = "1965.1.1"
+																  ideology =  oligarchism
+																  traits = {part_of_tropico}
+																  }
+										}
+								CRC  ={
+										  set_political_party = {
+																	ideology = neutrality
+																	popularity = 100
+																}
+										  create_country_leader = {
+																  name = "Local_government"
+																  desc = "LOCAL_GOVERNMENT"
+																  picture = TPO_colony.dds
+																  expire = "1965.1.1"
+																  ideology =  oligarchism
+																  traits = {part_of_tropico}
+																  }
+										}
+								TRI  ={
+										  set_political_party = {
+																	ideology = neutrality
+																	popularity = 100
+																}
+										  create_country_leader = {
+																  name = "Local_government"
+																  desc = "LOCAL_GOVERNMENT"
+																  picture = TPO_colony.dds
+																  expire = "1965.1.1"
+																  ideology =  oligarchism
+																  traits = {part_of_tropico}
+																  }
+										}
+		hidden_effect ={TPO ={puppet = DOM
+							  puppet = HAI
+							  puppet = JAM
+							  puppet = CUB							  
+							  puppet = PUE							  
+							  puppet = BAH							  
+							  puppet = BAS							  
+							  puppet = GDL							  
+							  puppet = CRC							  
+							  puppet = TRI							  
+									
+									add_state_core = 315
+									add_state_core = 689
+									add_state_core = 690
+									add_state_core = 693
+									add_state_core = 318
+									add_state_core = 319
+									add_state_core = 695
+									add_state_core = 691
+									add_state_core = 692
+									add_state_core = 694
+									add_state_core = 308
+									add_state_core = 686
+							 }
+								DOM ={ set_cosmetic_tag = IDH}
+								HAI ={ set_cosmetic_tag = IDH}
+								JAM ={ set_cosmetic_tag = IRO}
+								CUB ={ set_cosmetic_tag = IEN}
+								PUE ={ set_cosmetic_tag = AEO}
+								BAH ={ set_cosmetic_tag = PCU}
+								BAS ={ set_cosmetic_tag = PUR}
+								GDL ={ set_cosmetic_tag = SAP}
+								CRC ={ set_cosmetic_tag = PCO}
+								TRI ={ set_cosmetic_tag = CDF}
+						
+						}
+			}
+		}
+####################################################################################################
+focus = {
+		id = absolut_power
+		prerequisite = {focus = el_presidente}
+		icon = GFX_TPO_AP
+		relative_position_id = el_presidente
+		mutually_exclusive = { focus = oppose_el_pres }
+		x = -9
+		y = 1
+		cost = 4.4
+		
+		available = {}
+		
+		available_if_capitulated = yes
+		completion_reward = {country_event = { id= tropico.21 }
+								add_political_power = 300
+		
+		
+							}
+		}
+		
+focus = {
+		id = tropico_first
+		prerequisite = {focus = absolut_power}
+		icon = GFX_TPO_TF
+		relative_position_id = absolut_power
+		x = 0
+		y = 1
+		cost = 4.4
+		
+		available = {}
+							
+		available_if_capitulated = yes
+		completion_reward = {country_event = { id= tropico.22 }
+							  add_stability = 0.25
+							  add_war_support = 0.25
+							  
+							}
+		}
+		
+focus = {
+		id = cities_of_gold
+		prerequisite = {focus = tropico_first}
+		icon = GFX_TPO_COG
+		relative_position_id = absolut_power
+		x = -2
+		y = 2
+		cost = 21.5
+		
+		available = {}
+							
+		available_if_capitulated = yes
+		completion_reward = {
+		country_event = { id= tropico.23 }
+ 788={add_building_construction = {type = arms_factory level = 1 instant_build = yes}
+	  add_building_construction = {type = industrial_complex level = 1 instant_build = yes}
+	  add_extra_state_shared_building_slots = 2}
+ 789={add_building_construction = {type = arms_factory level = 1 instant_build = yes}
+	  add_building_construction = {type = industrial_complex level = 1 instant_build = yes}
+	  add_extra_state_shared_building_slots = 2}
+ 790={add_building_construction = {type = arms_factory level = 1 instant_build = yes}
+	  add_building_construction = {type = industrial_complex level = 1 instant_build = yes}
+	  add_extra_state_shared_building_slots = 2}
+ 791={add_building_construction = {type = arms_factory level = 1 instant_build = yes}
+	  add_building_construction = {type = industrial_complex level = 1 instant_build = yes}
+	  add_extra_state_shared_building_slots = 2}
+ 792={add_building_construction = {type = arms_factory level = 1 instant_build = yes}
+	  add_building_construction = {type = industrial_complex level = 1 instant_build = yes}
+	  add_extra_state_shared_building_slots = 2}
+ 793={add_building_construction = {type = arms_factory level = 1 instant_build = yes}
+	  add_building_construction = {type = industrial_complex level = 1 instant_build = yes}
+	  add_extra_state_shared_building_slots = 2}
+ 794={add_building_construction = {type = arms_factory level = 1 instant_build = yes}
+	  add_building_construction = {type = industrial_complex level = 1 instant_build = yes}
+	  add_extra_state_shared_building_slots = 2}
+ 795={add_building_construction = {type = arms_factory level = 1 instant_build = yes}
+	  add_building_construction = {type = industrial_complex level = 1 instant_build = yes}
+	  add_extra_state_shared_building_slots = 2}
+ 796={add_building_construction = {type = arms_factory level = 1 instant_build = yes}
+	  add_building_construction = {type = industrial_complex level = 1 instant_build = yes}
+	  add_extra_state_shared_building_slots = 2}
+		}
+	}
+		
+focus = {
+		id = island_families
+		prerequisite = {focus = tropico_first}
+		icon = GFX_TPO_IF
+		relative_position_id = absolut_power
+		x = 1
+		y = 2
+		cost = 21.5
+		
+		available = {}
+							
+		available_if_capitulated = yes
+				completion_reward = {
+									country_event = { id= tropico.24 }
+									 788={add_building_construction = { type = naval_base level = 2 instant_build = yes province = {all_provinces = yes limit_to_border = yes}}
+										  add_extra_state_shared_building_slots = 1}
+									 789={add_building_construction = { type = naval_base level = 2 instant_build = yes province = {all_provinces = yes limit_to_border = yes}}
+										  add_extra_state_shared_building_slots = 1}
+									 790={add_building_construction = { type = naval_base level = 2 instant_build = yes province = {all_provinces = yes limit_to_border = yes}}
+										  add_extra_state_shared_building_slots = 1}
+									 791={add_building_construction = { type = naval_base level = 2 instant_build = yes province = {all_provinces = yes limit_to_border = yes}}
+										  add_extra_state_shared_building_slots = 1}
+									 792={add_building_construction = { type = naval_base level = 2 instant_build = yes province = {all_provinces = yes limit_to_border = yes}}
+										  add_extra_state_shared_building_slots = 1}
+									 793={add_building_construction = { type = naval_base level = 2 instant_build = yes province = {all_provinces = yes limit_to_border = yes}}
+										  add_extra_state_shared_building_slots = 1}
+									 794={add_building_construction = { type = naval_base level = 2 instant_build = yes province = {all_provinces = yes limit_to_border = yes}}
+										  add_extra_state_shared_building_slots = 1}
+									 795={add_building_construction = { type = naval_base level = 2 instant_build = yes province = {all_provinces = yes limit_to_border = yes}}
+										  add_extra_state_shared_building_slots = 1}
+									 796={add_building_construction = { type = naval_base level = 2 instant_build = yes province = {all_provinces = yes limit_to_border = yes}}
+										  add_extra_state_shared_building_slots = 1}
+									}
+		}
+focus = {
+		id = prepare
+		prerequisite = {focus = tropico_first}
+		icon = GFX_TPO_TT
+		relative_position_id = absolut_power
+		x = -6
+		y = 2
+		cost = 21.5
+		
+		available = {
+						
+		}
+							
+		available_if_capitulated = yes
+		completion_reward = {
+		country_event = { id= tropico.25 }
+		army_experience = 150
+		navy_experience = 250
+		air_experience = 100
+							}
+		}
+focus = {
+		id = seas_of_glory
+		prerequisite = {focus = prepare}
+		icon = GFX_TPO_SOG
+		relative_position_id = prepare
+		x = -1
+		y = 1
+		cost = 21.5
+		
+		available = {}
+							
+		available_if_capitulated = yes
+		completion_reward = {	
+						  country_event = { id = tropico.26}
+					 788={add_building_construction = {type = dockyard level = 1 instant_build = yes}
+						  add_extra_state_shared_building_slots = 1}
+					 789={add_building_construction = {type = dockyard level = 1 instant_build = yes}
+						  add_extra_state_shared_building_slots = 1}
+					 790={add_building_construction = {type = dockyard level = 1 instant_build = yes}
+						  add_extra_state_shared_building_slots = 1}
+					 791={add_building_construction = {type = dockyard level = 1 instant_build = yes}
+						  add_extra_state_shared_building_slots = 1}
+					 792={add_building_construction = {type = dockyard level = 1 instant_build = yes}
+						  add_extra_state_shared_building_slots = 1}
+					 793={add_building_construction = {type = dockyard level = 1 instant_build = yes}
+						  add_extra_state_shared_building_slots = 1}
+					 794={add_building_construction = {type = dockyard level = 1 instant_build = yes}
+						  add_extra_state_shared_building_slots = 1}
+					 795={add_building_construction = {type = dockyard level = 1 instant_build = yes}
+						  add_extra_state_shared_building_slots = 1}
+					 796={add_building_construction = {type = dockyard level = 1 instant_build = yes}
+						  add_extra_state_shared_building_slots = 1}
+							}
+		}
+focus = {
+		id = fortress_tropico
+		prerequisite = {focus = prepare}
+		icon = GFX_TPO_FT
+		relative_position_id = prepare
+		x = 1
+		y = 1
+		cost = 21.5
+		
+		available = {}
+							
+		available_if_capitulated = yes
+		completion_reward = {
+		country_event = { id= tropico.27}
+									 788={add_building_construction = { type = bunker level = 5 instant_build = yes province = {all_provinces = yes limit_to_border = yes}}
+										  add_building_construction = { type = coastal_bunker level = 5 instant_build = yes province = {all_provinces = yes limit_to_border = yes}}
+										  add_building_construction = { type = anti_air_building level = 2 instant_build = yes}
+										  add_building_construction = { type = radar_station level = 1 instant_build = yes }
+										  add_extra_state_shared_building_slots = 1}
+										  
+									 789={add_building_construction = { type = bunker level = 5 instant_build = yes province = {all_provinces = yes limit_to_border = yes}}
+										  add_building_construction = { type = coastal_bunker level = 5 instant_build = yes province = {all_provinces = yes limit_to_border = yes}}
+										  add_building_construction = { type = anti_air_building level = 2 instant_build = yes }
+										  add_extra_state_shared_building_slots = 1}
+										  
+									 790={add_building_construction = { type = bunker level = 5 instant_build = yes province = {all_provinces = yes limit_to_border = yes}}
+										  add_building_construction = { type = coastal_bunker level = 5 instant_build = yes province = {all_provinces = yes limit_to_border = yes}}
+										  add_building_construction = { type = anti_air_building level = 2 instant_build = yes }
+										  add_extra_state_shared_building_slots = 1}
+										  
+									 791={add_building_construction = { type = bunker level = 5 instant_build = yes province = {all_provinces = yes limit_to_border = yes}}
+										  add_building_construction = { type = coastal_bunker level = 5 instant_build = yes province = {all_provinces = yes limit_to_border = yes}}
+										  add_building_construction = { type = anti_air_building level = 2 instant_build = yes }
+										  add_building_construction = { type = radar_station level = 1 instant_build = yes }
+										  add_extra_state_shared_building_slots = 1}
+										  
+									 792={add_building_construction = { type = bunker level = 5 instant_build = yes province = {all_provinces = yes limit_to_border = yes}}
+										  add_building_construction = { type = coastal_bunker level = 5 instant_build = yes province = {all_provinces = yes limit_to_border = yes}}
+										  add_building_construction = { type = anti_air_building level = 2 instant_build = yes }
+										  add_extra_state_shared_building_slots = 1}
+										  
+									 793={add_building_construction = { type = bunker level = 5 instant_build = yes province = {all_provinces = yes limit_to_border = yes}}
+										  add_building_construction = { type = coastal_bunker level = 5 instant_build = yes province = {all_provinces = yes limit_to_border = yes}}
+										  add_building_construction = { type = anti_air_building level = 2 instant_build = yes }
+										  add_extra_state_shared_building_slots = 1}
+										  
+									 794={add_building_construction = { type = bunker level = 5 instant_build = yes province = {all_provinces = yes limit_to_border = yes}}
+										  add_building_construction = { type = coastal_bunker level = 5 instant_build = yes province = {all_provinces = yes limit_to_border = yes}}
+										  add_building_construction = { type = anti_air_building level = 2 instant_build = yes}
+										  add_extra_state_shared_building_slots = 1}
+										  
+									 795={add_building_construction = { type = bunker level = 5 instant_build = yes province = {all_provinces = yes limit_to_border = yes}}
+										  add_building_construction = { type = coastal_bunker level = 5 instant_build = yes province = {all_provinces = yes limit_to_border = yes}}
+										  add_building_construction = { type = anti_air_building level = 2 instant_build = yes }
+										  add_extra_state_shared_building_slots = 1}
+										  
+									 796={add_building_construction = { type = bunker level = 5 instant_build = yes province = {all_provinces = yes limit_to_border = yes}}
+										  add_building_construction = { type = coastal_bunker level = 5 instant_build = yes province = {all_provinces = yes limit_to_border = yes}}
+										  add_building_construction = { type = anti_air_building level = 2 instant_build = yes }
+										  add_building_construction = { type = radar_station level = 5 instant_build = yes }
+										  add_extra_state_shared_building_slots = 1}
+							}
+		}
+
+focus = {
+		id = science
+		prerequisite = {focus = cities_of_gold}
+		icon = GFX_TPO_science
+		relative_position_id = cities_of_gold
+		x = -1
+		y = 1
+		cost = 21.5
+		
+		available = {TPO={has_tech = experimental_rockets 
+						  has_tech = atomic_research}
+					}
+							
+		available_if_capitulated = yes
+		completion_reward = {
+		country_event = { id = tropico.28 }
+		TPO={add_research_slot = 1}
+		
+		795={add_building_construction = { type = fuel_silo level = 2 instant_build = yes }
+			 add_building_construction = { type = synthetic_refinery level = 1 instant_build = yes }
+			 add_building_construction = { type = rocket_site level = 1 instant_build = yes }
+			 add_building_construction = { type = nuclear_reactor level = 1 instant_build = yes }
+			 add_extra_state_shared_building_slots = 5
+			}
+			
+			set_technology = { nuclear_reactor = 1}
+							}
+		}
+		
+focus = {
+		id = floating_cities
+		prerequisite = {focus = cities_of_gold}
+		prerequisite = {focus = island_families}
+		icon = GFX_TPO_FC
+		relative_position_id = cities_of_gold
+		x = 1
+		y = 1
+		cost = 21.5
+		
+		available = {}
+							
+		available_if_capitulated = yes
+		completion_reward = {
+		
+		country_event = { id = tropico.29 }
+							     788={ add_manpower = 6768
+									  add_extra_state_shared_building_slots = 4}
+								 789={ add_manpower = 6577
+									  add_extra_state_shared_building_slots = 4}
+								 790={ add_manpower = 2236
+									  add_extra_state_shared_building_slots = 4}
+								 791={ add_manpower = 2611
+									  add_extra_state_shared_building_slots = 4}
+								 792={ add_manpower = 7007
+									  add_extra_state_shared_building_slots = 4}
+								 793={ add_manpower = 4890
+									  add_extra_state_shared_building_slots = 4}
+								 794={ add_manpower = 4336
+									  add_extra_state_shared_building_slots = 4}
+								 795={ add_manpower = 3472
+									  add_extra_state_shared_building_slots = 4}
+								 796={ add_manpower = 2952
+									  add_extra_state_shared_building_slots = 4}
+						}
+		}
+		
+		 
+focus = {
+		id = roads_of_tropico
+		prerequisite = {focus = island_families}
+		icon = GFX_TPO_ROT
+		relative_position_id = island_families
+		x = 0
+		y = 1
+		cost = 21.5
+		
+		available = {}
+							
+		available_if_capitulated = yes
+		completion_reward = {
+							country_event = { id = tropico.30 }
+							 788={add_building_construction = {type = infrastructure level = 2 instant_build = yes}
+								  add_extra_state_shared_building_slots = 2}
+							 789={add_building_construction = {type = infrastructure level = 2 instant_build = yes}
+								  add_extra_state_shared_building_slots = 2}
+							 790={add_building_construction = {type = infrastructure level = 2 instant_build = yes}
+								  add_extra_state_shared_building_slots = 2}
+							 791={add_building_construction = {type = infrastructure level = 2 instant_build = yes}
+								  add_extra_state_shared_building_slots = 2}
+							 792={add_building_construction = {type = infrastructure level = 2 instant_build = yes}
+								  add_extra_state_shared_building_slots = 2}
+							 793={add_building_construction = {type = infrastructure level = 2 instant_build = yes}
+								  add_extra_state_shared_building_slots = 2}
+							 794={add_building_construction = {type = infrastructure level = 2 instant_build = yes}
+								  add_extra_state_shared_building_slots = 2}
+							 795={add_building_construction = {type = infrastructure level = 2 instant_build = yes}
+								  add_extra_state_shared_building_slots = 2}
+							 796={add_building_construction = {type = infrastructure level = 2 instant_build = yes}
+								  add_extra_state_shared_building_slots = 2}
+								}
+		}
+		
+focus = {
+		id = dynasty
+		prerequisite = {focus = seas_of_glory}
+		prerequisite = {focus = fortress_tropico}
+		prerequisite = {focus = science}
+		prerequisite = {focus = floating_cities}
+		prerequisite = {focus = roads_of_tropico}
+		icon = GFX_TPO_dynasty
+		relative_position_id = island_families
+		x = -5
+		y = 3
+		cost = 42.9
+		
+		available = {}
+							
+		available_if_capitulated = yes
+		completion_reward = {country_event = { id= tropico.31}
+		}
+		}
+####################################################################################################
+focus = {
+		id = oppose_el_pres
+		prerequisite = {focus = el_presidente}
+		icon = GFX_TPO_oppose
+		relative_position_id = el_presidente
+		mutually_exclusive = { focus = absolut_power }
+		x = 9
+		y = 1
+		cost = 10
+		
+		available = {
+							}
+						
+		
+		available_if_capitulated = yes
+		completion_reward = {country_event={id = tropico.32}}
+		}
+
+focus = {
+		id = rally_rebels
+		prerequisite = {focus = oppose_el_pres}
+		icon = GFX_TPO_rebels
+		relative_position_id = oppose_el_pres
+		x = 2
+		y = 1
+		cost = 10
+		
+			available = {  TPO = {AND = {
+										 has_stability > 0.1
+										 has_stability <0.5
+										}
+			
+								 }			
+						}
+			available_if_capitulated = yes
+			completion_reward = {add_political_power = 150
+								 add_stability = -0.1
+								 country_event={id = tropico.33}
+			}
+		}
+		
+focus = {
+		id = rally_police
+		prerequisite = {focus = oppose_el_pres}
+		icon = GFX_TPO_police
+		relative_position_id = oppose_el_pres
+		x = 0
+		y = 1
+		cost = 10
+		
+		available = {  TPO = {AND = {
+										 has_stability > 0.1
+										 has_stability <0.5
+										}
+			
+								 }			
+						}
+			available_if_capitulated = yes
+			completion_reward = {add_political_power = 150
+								 add_stability = -0.1
+								 country_event={id = tropico.34}
+			}
+		}
+		
+focus = {
+		id = rally_military
+		prerequisite = {focus = oppose_el_pres}
+		icon = GFX_TPO_military
+		relative_position_id = oppose_el_pres
+		x = -2
+		y = 1
+		cost = 10
+		
+		available = {  TPO = {AND = {
+										 has_stability > 0.1
+										 has_stability <0.5
+										 
+										}
+			
+								 }			
+						}
+			available_if_capitulated = yes
+			completion_reward = {add_political_power = 150
+								 add_stability = -0.1
+			country_event={id = tropico.35}
+			}
+		}
+
+focus = {
+		id = vacation
+		prerequisite = {focus = rally_military}
+		prerequisite = {focus = rally_rebels}
+		prerequisite = {focus = rally_police}
+		icon = GFX_TPO_vacation
+		relative_position_id = oppose_el_pres
+		x = 0
+		y = 2
+		cost = 10
+		
+		available = {
+							}			
+		
+		available_if_capitulated = yes
+		completion_reward = {country_event={id = tropico.36}
+		
+				kill_country_leader = yes
+				
+				create_country_leader = {
+											name = "Penultimo"
+											desc = "POLITICS_PENULTIMO_DESC"
+											picture = "penultimo.dds"
+											expire = "1965.1.1"
+											ideology = centrism
+											traits = { el_presidente}
+											}
+
+					create_country_leader = {
+											name = "Evita Vasquez"
+											desc = "POLITICS_VASQUEZ_DESC"
+											picture = "vasquez.dds"
+											expire = "1965.1.1"
+											ideology = anarchist_communism
+											traits = { el_presidente}
+											}
+											
+
+					create_country_leader = {
+											name = "Leon Kane"
+											desc = "POLITICS_KANE_DESC"
+											picture = "kane.dds"
+											expire = "1965.1.1"
+											ideology = rexism
+											traits = { el_presidente}
+											}
+
+					create_country_leader = {
+											name = "Adriana Diaz"
+											desc = "POLITICS_DIAZ_DESC"
+											picture = "diaz.dds"
+											expire = "1965.1.1"
+											ideology = socialism
+											traits = { el_presidente}
+											}
+							
+												
+		set_politics = {
+		ruling_party = democratic
+		election_frequency = 48
+		elections_allowed = yes
+			}
+	
+				set_popularities = {
+					democratic = 0.25
+					fascism = 0.25
+					communism = 0.25
+					neutrality = 0.25
+						}
+				
+					}											
+			}	
+			
+####################################################################################################
+focus = {
+		id = open_discourse
+		prerequisite = {focus = vacation}
+		icon = GFX_TPO_discourse
+		relative_position_id = oppose_el_pres
+		x = 0
+		y = 3
+		cost = 10
+		
+		available = {
+							}			
+		
+		available_if_capitulated = yes
+		completion_reward = {country_event={id = tropico.37}}
+		}
+		
+focus = {
+		id = germany
+		prerequisite = {focus = open_discourse}
+		icon = GFX_TPO_GER
+		relative_position_id = open_discourse
+		mutually_exclusive = { focus = allies }
+		mutually_exclusive = { focus = soviet }
+		mutually_exclusive = { focus = germany }
+		mutually_exclusive = { focus = china }
+		x = 0
+		y = 1
+		cost = 10
+		
+		available = { TPO= {has_government = fascism}}			
+		
+		available_if_capitulated = yes
+		completion_reward = {add_political_power = 100
+							 country_event={id = tropico.38}
+		}
+		}
+		
+focus = {
+		id = germany_1
+		prerequisite = {focus = germany}
+		icon = GFX_TPO_GER
+		relative_position_id = germany
+		x = 0
+		y = 1
+		cost = 10
+		
+		available = { TPO= {has_government = fascism}
+					  has_equipment = {infantry_equipment > 4999}
+					  has_equipment = {support_equipment > 999}
+					  has_equipment = {light_tank_equipment > 649}
+				      has_equipment = {heavy_tank_equipment > 499}
+		}					
+		
+		available_if_capitulated = yes
+		completion_reward = { GER ={	
+									add_equipment_to_stockpile = {  type = infantry_equipment amount = 5000 producer = TPO}
+									add_equipment_to_stockpile = {  type = support_equipment amount = 1000 producer = TPO}
+									add_equipment_to_stockpile = {  type = light_tank_equipment amount = 750 producer = TPO}
+									add_equipment_to_stockpile = {  type = heavy_tank_equipment amount = 500 producer = TPO}
+								   }	
+							  TPO ={	
+									add_equipment_to_stockpile = {  type = infantry_equipment amount = -5000 producer = TPO}
+									add_equipment_to_stockpile = {  type = support_equipment amount = -1000 producer = TPO}
+									add_equipment_to_stockpile = {  type = light_tank_equipment amount = -750 producer = TPO}
+									add_equipment_to_stockpile = {  type = heavy_tank_equipment amount = -500 producer = TPO}
+								   }	
+								country_event={id = tropico.39}  
+							}
+		}
+		
+focus = {
+		id = germany_2
+		prerequisite = {focus = germany_1}
+		icon = GFX_TPO_GER
+		relative_position_id = germany
+		x = 0
+		y = 2
+		cost = 10			
+		
+		available = { TPO= {has_government = fascism}}			
+		
+		available_if_capitulated = yes
+		completion_reward = { 795={add_building_construction = {type = arms_factory level = 2 instant_build = yes}
+								   add_extra_state_shared_building_slots = 2}
+						      793={add_building_construction = {type = infrastructure level = 2 instant_build = yes}
+								   add_extra_state_shared_building_slots = 2}
+								country_event={id = tropico.40}
+							}
+		}
+		
+focus = {
+		id = germany_3
+		prerequisite = {focus = germany_1}
+		icon = GFX_TPO_GER
+		relative_position_id = germany
+		x = 2
+		y = 2
+		cost = 10
+		
+		available = { TPO= {has_government = fascism}}					
+		
+		available_if_capitulated = yes
+		completion_reward = {
+						 GER = { add_to_faction = TPO }
+							country_event={id = tropico.41}
+							}
+		}
+
+focus = {
+		id = allies
+		prerequisite = {focus = open_discourse}
+		icon = GFX_TPO_allies
+		relative_position_id = open_discourse
+		mutually_exclusive = { focus = germany }
+		mutually_exclusive = { focus = soviet }
+		mutually_exclusive = { focus = germany }
+		mutually_exclusive = { focus = china }
+		x = 4
+		y = 1
+		cost = 10
+		
+		available = { TPO= {has_government = democratic}}	
+		
+		available_if_capitulated = yes
+		completion_reward = {add_political_power = 100
+							country_event={id = tropico.42}
+		}
+		}
+		
+focus = {
+		id = allies_1
+		prerequisite = {focus = allies}
+		icon = GFX_TPO_allies
+		relative_position_id = allies
+		x = 0
+		y = 1
+		cost = 10
+		
+		available = { TPO= {has_government = democratic}
+					  has_equipment = {infantry_equipment > 5499}
+					  has_equipment = {support_equipment > 499}
+					  has_equipment = {motorized_equipment > 499}
+				      has_equipment = {mechanized_equipment > 499}
+		}					
+		
+		available_if_capitulated = yes
+		completion_reward = { USA ={	
+									add_equipment_to_stockpile = {  type = infantry_equipment amount = 5500 producer = TPO}
+									add_equipment_to_stockpile = {  type = support_equipment amount = 500 producer = TPO}
+									add_equipment_to_stockpile = {  type = motorized_equipment amount = 500 producer = TPO}
+									add_equipment_to_stockpile = {  type = mechanized_equipment amount = 500 producer = TPO}
+								   }	
+							  TPO ={	
+									add_equipment_to_stockpile = {  type = infantry_equipment amount = -5500 producer = TPO}
+									add_equipment_to_stockpile = {  type = support_equipment amount = -500 producer = TPO}
+									add_equipment_to_stockpile = {  type = motorized_equipment amount = -500 producer = TPO}
+									add_equipment_to_stockpile = {  type = mechanized_equipment amount = -500 producer = TPO}
+								   }	
+								  country_event={id = tropico.43}
+							}
+		}		
+		
+focus = {
+		id = allies_2
+		prerequisite = {focus = allies_1}
+		icon = GFX_TPO_allies
+		relative_position_id = allies
+		x = 0
+		y = 2
+		cost = 10
+		
+		available = { TPO= {has_government = democratic}}	
+		
+		available_if_capitulated = yes
+		completion_reward = {
+								796={add_building_construction = {type = dockyard level = 1 instant_build = yes}
+								     add_building_construction = {type = naval_base level = 2 instant_build = yes}
+									 add_extra_state_shared_building_slots = 2
+									}
+								794={add_building_construction = {type = dockyard level = 1 instant_build = yes}
+								     add_building_construction = {type = naval_base level = 2 instant_build = yes}
+								     add_extra_state_shared_building_slots = 2
+									}
+								788={add_building_construction = {type = dockyard level = 1 instant_build = yes}
+								     add_building_construction = {type = naval_base level = 2 instant_build = yes}
+								     add_extra_state_shared_building_slots = 2
+									}
+								791={add_building_construction = {type = dockyard level = 1 instant_build = yes}
+								     add_building_construction = {type = naval_base level = 2 instant_build = yes}
+									 add_extra_state_shared_building_slots = 2
+									}
+								country_event={id = tropico.44}
+		}
+		}		
+		
+focus = {
+		id = allies_3
+		prerequisite = {focus = allies_1}
+		icon = GFX_TPO_allies
+		relative_position_id = allies
+		x = 2
+		y = 2
+		cost = 10
+		
+		available_if_capitulated = yes
+		completion_reward = {
+					ENG = { add_to_faction = TPO }
+					country_event={id = tropico.45}
+		}
+		}	
+		
+focus = {
+		id = soviet
+		prerequisite = {focus = open_discourse}
+		icon = GFX_TPO_SOV
+		relative_position_id = open_discourse
+		mutually_exclusive = { focus = germany }
+		mutually_exclusive = { focus = allies }
+		mutually_exclusive = { focus = germany }
+		mutually_exclusive = { focus = china }
+		
+		x = 8
+		y = 1
+		cost = 10
+
+		available = { TPO= {has_government = communism}}		
+		
+		available_if_capitulated = yes
+		completion_reward = {add_political_power = 100
+							country_event={id = tropico.46}
+		}
+		}
+		
+focus = {
+		id = soviet_1
+		prerequisite = {focus = soviet}
+		icon = GFX_TPO_SOV
+		relative_position_id = soviet
+		x = 0
+		y = 1
+		cost = 10
+		
+		available = { TPO= {has_government = democratic}
+					  has_equipment = {infantry_equipment > 5999}
+					  has_equipment = {support_equipment > 999}
+
+		}					
+		
+		available_if_capitulated = yes
+		completion_reward = { SOV ={	
+									add_equipment_to_stockpile = {  type = infantry_equipment amount = 6000 producer = TPO}
+									add_equipment_to_stockpile = {  type = support_equipment amount = 1000 producer = TPO}
+								   }	
+							  TPO ={	
+									add_equipment_to_stockpile = {  type = infantry_equipment amount = -6000 producer = TPO}
+									add_equipment_to_stockpile = {  type = support_equipment amount = -1000 producer = TPO}
+								   }	
+								country_event={id = tropico.47}  
+							}
+		}
+		
+focus = {
+		id = soviet_2
+		prerequisite = {focus = soviet_1}
+		icon = GFX_TPO_SOV
+		relative_position_id = soviet
+		x = 0
+		y = 2
+		cost = 10
+		
+		available = { TPO= {has_government = communism}}		
+		
+		available_if_capitulated = yes
+		completion_reward = {
+								792={add_building_construction = {type = radar_station level = 1 instant_build = yes}
+								     add_building_construction = {type = rocket_site level = 1 instant_build = yes}
+									 add_building_construction = {type = air_base level = 1 instant_build = yes}
+								     add_building_construction = {type = industrial_complex level = 1 instant_build = yes}
+									 add_building_construction = {type = arms_factory level = 1 instant_build = yes}
+									 add_extra_state_shared_building_slots = 2
+									}
+								793={add_building_construction = {type = radar_station level = 1 instant_build = yes}
+								     add_building_construction = {type = rocket_site level = 1 instant_build = yes}
+									 add_building_construction = {type = air_base level = 1 instant_build = yes}
+								     add_building_construction = {type = industrial_complex level = 1 instant_build = yes}
+									 add_building_construction = {type = arms_factory level = 1 instant_build = yes}
+									 add_extra_state_shared_building_slots = 2
+									}
+								country_event={id = tropico.48}
+		
+		}
+		}
+		
+focus = {
+		id = soviet_3
+		prerequisite = {focus = soviet_1}
+		icon = GFX_TPO_SOV
+		relative_position_id = soviet
+		x = 2
+		y = 2
+		cost = 10
+		
+		available = { TPO= {has_government = communism}}	
+		
+		available_if_capitulated = yes
+		completion_reward = {
+								SOV = { add_to_faction = TPO }
+								country_event={id = tropico.49}
+							}
+		}
+		
+focus = {
+		id = china
+		prerequisite = {focus = open_discourse}
+		icon = GFX_TPO_CHI
+		relative_position_id = open_discourse
+		mutually_exclusive = { focus = germany }
+		mutually_exclusive = { focus = allies }
+		mutually_exclusive = { focus = soviet }
+		mutually_exclusive = { focus = germany }
+
+		x = 12
+		y = 1
+		cost = 10
+		
+		available = { TPO= {has_government = neutrality}}		
+		
+		available_if_capitulated = yes
+		completion_reward = {add_political_power = 100
+							country_event={id = tropico.50}
+		}
+		}
+		
+focus = {
+		id = china_1
+		prerequisite = {focus = china}
+		icon = GFX_TPO_CHI
+		relative_position_id = china
+		x = 0
+		y = 1
+		cost = 10
+		
+		available = { TPO= {has_government = democratic}
+					  has_equipment = {infantry_equipment > 4499}
+					  has_equipment = {support_equipment > 699}
+					  has_equipment = {fighter_equipment > 599}
+				      has_equipment = {CAS_equipment > 599}
+		}					
+		
+		available_if_capitulated = yes
+		completion_reward = { CHI ={	
+									add_equipment_to_stockpile = {  type = infantry_equipment amount = 4500 producer = TPO}
+									add_equipment_to_stockpile = {  type = support_equipment amount = 700 producer = TPO}
+									add_equipment_to_stockpile = {  type = motorized_equipment amount = 600 producer = TPO}
+									add_equipment_to_stockpile = {  type = mechanized_equipment amount = 600 producer = TPO}
+								   }	
+							  TPO ={	
+									add_equipment_to_stockpile = {  type = infantry_equipment amount = -4500 producer = TPO}
+									add_equipment_to_stockpile = {  type = support_equipment amount = -700 producer = TPO}
+									add_equipment_to_stockpile = {  type = motorized_equipment amount = -600 producer = TPO}
+									add_equipment_to_stockpile = {  type = mechanized_equipment amount = -600 producer = TPO}
+								   }	
+								country_event={id = tropico.51}								  
+							}
+		}
+		
+focus = {
+		id = china_2
+		prerequisite = {focus = china_1}
+		icon = GFX_TPO_CHI
+		relative_position_id = china
+		x = 0
+		y = 2
+		cost = 10
+		
+		available = { TPO= {has_government = neutrality}}
+		
+		available_if_capitulated = yes
+		completion_reward = {TPO = {
+										add_offsite_building = { type = arms_factory level = 5 }
+										add_offsite_building = { type = industrial_complex level = 5 }
+										add_offsite_building = { type = dockyard level = 5}
+									}
+								country_event={id = tropico.52}
+		}
+		}
+		
+focus = {
+		id = china_3
+		prerequisite = {focus = china_1}
+		icon = GFX_TPO_CHI
+		relative_position_id = china
+		x = 2
+		y = 2
+		cost = 10
+		
+		available = { TPO= {has_government = neutrality}}
+		
+		available_if_capitulated = yes
+		completion_reward = {CHI = { add_to_faction = TPO }
+										country_event={id = tropico.53}
+							}
+		}
+####################################################################################################
+	focus = {
+		id = pressure_us_1
+		prerequisite = {}
+		relative_position_id = el_presidente
+		icon = GFX_TPO_USA_1
+		x = -2
+		y = 2
+		cost = 2
+		
+		available_if_capitulated = yes
+
+		available = {
+		And = {		 
+					country_exists = PAN
+					country_exists = NIC
+					country_exists = COS
+					country_exists = MEX
+					country_exists = GUA
+					country_exists = ELS
+					country_exists = HON
+					
+				has_army_manpower = {
+									size > 49999
+				}	
+			  }
+					}
+
+		completion_reward = {
+				
+				country_event={id = tpo_usa.1}
+				
+				 USA = {
+							diplomatic_relation = {
+							country = MEX
+							relation = guarantee
+							active = no
+							}
+							diplomatic_relation = {
+							country = GUA
+							relation = guarantee
+							active = no
+							}
+							diplomatic_relation = {
+							country = ELS
+							relation = guarantee
+							active = no
+							}
+							diplomatic_relation = {
+							country = HON
+							relation = guarantee
+							active = no
+							}
+							diplomatic_relation = {
+							country = COS
+							relation = guarantee
+							active = no
+							}
+							diplomatic_relation = {
+							country = NIC
+							relation = guarantee
+							active = no
+							}
+							diplomatic_relation = {
+							country = PAN
+							relation = guarantee
+							active = no
+						    }
+						}
+					}
+		}
+			
+	focus = {
+		id = pressure_us_2
+		prerequisite = {}
+		relative_position_id = el_presidente
+		icon = GFX_TPO_USA_2
+		x = -4
+		y = 2
+		cost = 2
+		
+		available_if_capitulated = yes
+
+		available = {
+		And = {		 
+					country_exists = CUB
+					country_exists = DOM
+					country_exists = HAI
+					 num_of_military_factories > 10
+					 num_of_civilian_factories > 10
+					
+			  }
+					}
+
+		completion_reward = {
+		
+					country_event={id = tpo_usa.2}
+		
+				 USA = {
+							diplomatic_relation = {
+							country = CUB
+							relation = guarantee
+							active = no
+							}
+							diplomatic_relation = {
+							country = TPO
+							relation = guarantee
+							active = no
+							}
+							diplomatic_relation = {
+							country = DOM
+							relation = guarantee
+							active = no
+							}
+							diplomatic_relation = {
+							country = HAI
+							relation = guarantee
+							active = no
+							}
+
+						}
+							
+							}
+							
+		}
+	focus = {
+		id = pressure_us_3
+		icon = GFX_TPO_USA_3
+		relative_position_id = el_presidente
+		prerequisite = {}
+		x = 2
+		y = 2
+		cost = 2
+		
+		available_if_capitulated = yes
+
+		available = {
+		And = {		 
+					country_exists = COL
+					country_exists = VEN
+					country_exists = ECU
+					country_exists = PRU
+					country_exists = BRA
+					has_manpower > 14999
+					
+			  }
+					}
+		completion_reward = {
+						
+						country_event={id = tpo_usa.3}
+						
+				 USA = {
+							diplomatic_relation = {
+							country = VEN
+							relation = guarantee
+							active = no
+							}
+							diplomatic_relation = {
+							country = COL
+							relation = guarantee
+							active = no
+							}
+							diplomatic_relation = {
+							country = ECU
+							relation = guarantee
+							active = no
+							}
+							diplomatic_relation = {
+							country = PRU
+							relation = guarantee
+							active = no
+							}
+							diplomatic_relation = {
+							country = BRA
+							relation = guarantee
+							active = no
+							}
+						}
+					add_manpower = -15000
+					}
+		}
+		
+	focus = {
+		id = pressure_us_4
+		icon = GFX_TPO_USA_4
+		relative_position_id = el_presidente
+		prerequisite = {}
+		x = 4
+		y = 2
+		cost = 2
+		
+		available_if_capitulated = yes
+
+		available = {
+		And = {		 
+					country_exists = BOL
+					country_exists = PAR
+					country_exists = URG
+					country_exists = ARG
+					country_exists = CHL
+				has_political_power > 300	
+			  }
+					}
+
+		completion_reward = {
+						
+						country_event={id = tpo_usa.4}
+						
+				 USA = {
+							diplomatic_relation = {
+							country = BOL
+							relation = guarantee
+							active = no
+							}
+							diplomatic_relation = {
+							country = PAR
+							relation = guarantee
+							active = no
+							}
+							diplomatic_relation = {
+							country = URG
+							relation = guarantee
+							active = no
+							}
+							diplomatic_relation = {
+							country = ARG
+							relation = guarantee
+							active = no
+							}
+							diplomatic_relation = {
+							country = CHL
+							relation = guarantee
+							active = no
+							}
+						}
+					add_political_power = -300
+					}
+		}
+	
+####################################################################################################
+}

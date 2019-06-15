@@ -1,0 +1,27 @@
+﻿division_template = {
+	name = "Jamaican Volunteers"
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		
+	}
+}
+
+
+units = {
+
+	division= {	
+		name = "Who Shoot the Sheriff"
+		location = 12477
+		division_template = "Jamaican Volunteers"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	add_equipment = { amount = 350 equipment_name = JAM_infantry_equipment_0}
+	add_equipment = { amount = 50 equipment_name = TPO_infantry_equipment_0}
+	add_equipment = { amount = 175 equipment_name = JAM_motorized_equipment_0}
+	add_equipment = { amount = 25 equipment_name = TPO_motorized_equipment_0}
+	}
+}

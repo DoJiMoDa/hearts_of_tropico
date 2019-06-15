@@ -1,0 +1,39 @@
+﻿division_template = {
+	name = "British Volunteers"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		
+	}
+	support = {
+        artillery = { x = 0 y = 0 }
+	}
+}
+
+
+units = {
+	division= {	
+		name = "Red Skirts"
+		location = 	379
+		division_template = "British Volunteers"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1.0
+	add_equipment = { amount = 350 equipment_name = BAS_infantry_equipment_0}
+	add_equipment = { amount = 150 equipment_name = TPO_infantry_equipment_0}
+	add_equipment = { amount = 12 equipment_name = USA_artillery_equipment_0}
+	}
+	division= {	
+		name = "Kingsman"
+		location = 7123
+		division_template = "British Volunteers"
+		start_experience_factor = 0.9
+		start_equipment_factor = 1.0
+	add_equipment = { amount = 220 equipment_name = HAI_infantry_equipment_0}
+	add_equipment = { amount = 180 equipment_name = TPO_infantry_equipment_0}
+	add_equipment = { amount = 12 equipment_name = ENG_artillery_equipment_0}
+	}
+}

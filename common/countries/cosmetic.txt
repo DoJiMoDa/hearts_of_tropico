@@ -1,0 +1,44 @@
+IDH = {
+		 color = { 152  140  191 }
+		 color_ui = rgb { 255 73 121 }
+	  }
+IRO = {
+		 color = { 152  140  191 }
+		 color_ui = rgb { 255 73 121 }
+	  }	 
+IEN = {
+		 color = { 152  140  191 }
+		 color_ui = rgb { 255 73 121 }
+	  }	 
+AEO = {
+		 color = { 152  140  191 }
+		 color_ui = rgb { 255 73 121 }
+	  }	 
+PUE = {
+		 color = { 152  140  191 }
+		 color_ui = rgb { 255 73 121 }
+	  }	 
+AEO = {
+		 color = { 152  140  191 }
+		 color_ui = rgb { 255 73 121 }
+	  }	 
+CDF = {
+		 color = { 152  140  191 }
+		 color_ui = rgb { 255 73 121 }
+	  }	 
+PCO = {
+		 color = { 152  140  191 }
+		 color_ui = rgb { 255 73 121 }
+	  }	 
+SAP = {
+		 color = { 152  140  191 }
+		 color_ui = rgb { 255 73 121 }
+	  }	 
+PUR = {
+		 color = { 152  140  191 }
+		 color_ui = rgb { 255 73 121 }
+	  }	 
+PCU = {
+		 color = { 152  140  191 }
+		 color_ui = rgb { 255 73 121 }
+	  }
