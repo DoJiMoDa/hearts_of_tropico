@@ -1,0 +1,30 @@
+﻿l_german:0
+ 
+ #States
+ STATE_788:0"Pulpo Azul"
+ STATE_789:0"Ojos del Diablo"
+ STATE_790:0"Costa Maledcio"
+ STATE_791:0"Destrozado"
+ STATE_792:0"Isla de Cortez"
+ STATE_793:0"Isla de Pescado" 
+ STATE_794:0"Mancha de Tinta"
+ STATE_795:0"Nido de Iguana"
+ STATE_796:0"Tres Padres"
+
+ #VICTORY_POINTS
+ VICTORY_POINTS_13218:0"Cortez"
+ VICTORY_POINTS_13219:0"Oviedo"
+ VICTORY_POINTS_13220:0"Cuedo"
+ VICTORY_POINTS_13220:0"Torriente"
+ VICTORY_POINTS_13221:0"San Cristobal"
+ VICTORY_POINTS_13222:0"Nido"
+ VICTORY_POINTS_13223:0"Cilo de Avila"
+ VICTORY_POINTS_13224:0"Santa Helena"
+ VICTORY_POINTS_13225:0"Quito"
+ VICTORY_POINTS_13226:0"San Fernando"
+ VICTORY_POINTS_13227:0"La Serrena"
+ VICTORY_POINTS_13228:0"El Venado"
+ VICTORY_POINTS_13229:0"Palace of El Presidente"
+ VICTORY_POINTS_13230:0"Bayamo"
+ VICTORY_POINTS_13231:0"Plato"
+ 
