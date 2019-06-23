@@ -1,0 +1,104 @@
+spriteTypes = {
+   
+   spriteType = {
+	name = "GFX_idea_tropico_cars"
+		texturefile = "gfx/interface/ideas/companies/tropicar.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_tropico_bus"
+		texturefile = "gfx/interface/ideas/companies/tropico_motor.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_tropico_transports"
+		texturefile = "gfx/interface/ideas/companies/tropico_holiday_agency.dds"
+	}
+	spriteType = {																					
+	name = "GFX_idea_tropico_tanks"
+		texturefile = "gfx/interface/ideas/companies/hola_cola.dds"
+	}
+	
+#####################################################################################	
+	spriteType = {
+	name = "GFX_idea_tropico_cruise"
+		texturefile = "gfx/interface/ideas/companies/el_muerto_pez.dds"
+	}
+
+	spriteType = {
+	name = "GFX_idea_tropico_smugglers_bay"
+		texturefile = "gfx/interface/ideas/companies/de_lata.dds"
+	}
+
+	spriteType = {
+	name = "GFX_idea_tropico_fisherman"
+		texturefile = "gfx/interface/ideas/companies/pesca.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_tropico_ships"
+		texturefile = "gfx/interface/ideas/companies/captain_rudder.dds"
+	}
+#####################################################################################
+	spriteType = {
+	name = "GFX_idea_tropico_CAS"
+		texturefile = "gfx/interface/ideas/companies/dr_presidente.dds"
+	}
+
+	spriteType = {
+	name = "GFX_idea_tropico_light_air"
+		texturefile = "gfx/interface/ideas/companies/muebels.dds"
+	}
+
+	spriteType = {
+	name = "GFX_idea_tropico_medium_air"
+		texturefile = "gfx/interface/ideas/companies/tropico_motel.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_idea_tropico_heavy_air"
+		texturefile = "gfx/interface/ideas/companies/oro_en_pulvo.dds"
+	}
+
+	spriteType = {
+	name = "GFX_idea_tropico_naval_air"
+		texturefile = "gfx/interface/ideas/companies/campo_deportivo.dds"
+	}
+#####################################################################################	
+	spriteType = {
+	name = "GFX_idea_tropico_cannery"
+		texturefile = "gfx/interface/ideas/companies/con_servo.dds"
+	}
+
+	spriteType = {
+	name = "GFX_idea_tropico_arms"
+		texturefile = "gfx/interface/ideas/companies/aceros_blandos.dds"
+	}
+
+	spriteType = {
+	name = "GFX_idea_tropico_furniture"
+		texturefile = "gfx/interface/ideas/companies/hiquea.dds"
+	}
+	spriteType = {																					
+	name = "GFX_idea_tropico_motorized"
+		texturefile = "gfx/interface/ideas/companies/tropi_cola.dds"
+	}
+#####################################################################################
+	spriteType = {
+	name = "GFX_idea_tropico_jewlery"
+		texturefile = "gfx/interface/ideas/companies/tropicolate.dds"
+	}
+
+	spriteType = {
+	name = "GFX_idea_tropico_electronics"
+		texturefile = "gfx/interface/ideas/companies/cigarros_la_llama.dds"
+	}
+
+	spriteType = {
+	name = "GFX_idea_tropico_lumbers"
+		texturefile = "gfx/interface/ideas/companies/tropico_club.dds"
+	}
+	
+	
+#####################################################################################
+}

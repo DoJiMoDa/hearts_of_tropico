@@ -1,0 +1,31 @@
+﻿l_russian:0
+ #provinces 
+ 
+ #States
+ STATE_788:0"Пульпо Азул"
+ STATE_789:0"Ойос Дель Диабло"
+ STATE_790:0"Коста Маледцио"
+ STATE_791:0"Дестрозадо"
+ STATE_792:0"Айла де Кортез"
+ STATE_793:0"Айла де Пескадо" 
+ STATE_794:0"Манча де Тинто"
+ STATE_795:0"Нидо де Игуана"
+ STATE_796:0"Трес Падрес"
+
+ #VICTORY_POINTS
+ VICTORY_POINTS_13218:0"Кортез"
+ VICTORY_POINTS_13219:0"Овиедо"
+ VICTORY_POINTS_13220:0"Куедо"
+ VICTORY_POINTS_13220:0"Торриенте"
+ VICTORY_POINTS_13221:0"Сан Кристобал"
+ VICTORY_POINTS_13222:0"Нидо"
+ VICTORY_POINTS_13223:0"Цило де Авила"
+ VICTORY_POINTS_13224:0"Санта Елена"
+ VICTORY_POINTS_13225:0"Куито"
+ VICTORY_POINTS_13226:0"Сан Фернандо"
+ VICTORY_POINTS_13227:0"Ла Серрена"
+ VICTORY_POINTS_13228:0"Эль Венадо"
+ VICTORY_POINTS_13229:0"Дворец Эль Президенте"
+ VICTORY_POINTS_13230:0"Баямо"
+ VICTORY_POINTS_13231:0"Плато"
+ 
