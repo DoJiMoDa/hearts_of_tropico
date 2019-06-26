@@ -1,7 +1,7 @@
 spriteTypes = {	
 ###########################################################################################################################
 	SpriteType = {
-		name = "GFX_TPO_el_pres"
+		name = "GFX_TPO_el_pres_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_el_pres.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -35,7 +35,7 @@ spriteTypes = {
 
 ###############################################################################################################################
 	SpriteType = {
-		name = "GFX_TPO_USA_1"
+		name = "GFX_TPO_USA_1_shine"
 		texturefile = "gfx/interface/goals/tpo_usa2.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -67,7 +67,7 @@ spriteTypes = {
 	}
 	
 		SpriteType = {
-		name = "GFX_TPO_USA_2"
+		name = "GFX_TPO_USA_2_shine"
 		texturefile = "gfx/interface/goals/tpo_usa1.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -99,7 +99,7 @@ spriteTypes = {
 	}
 	
 		SpriteType = {
-		name = "GFX_TPO_USA_3"
+		name = "GFX_TPO_USA_3_shine"
 		texturefile = "gfx/interface/goals/tpo_usa3.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -131,7 +131,7 @@ spriteTypes = {
 	}
 	
 		SpriteType = {
-		name = "GFX_TPO_USA_4"
+		name = "GFX_TPO_USA_4_shine"
 		texturefile = "gfx/interface/goals/tpo_usa4.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -163,7 +163,7 @@ spriteTypes = {
 	}
 ###############################################################################################################################
 		SpriteType = {
-		name = "GFX_TPO_caribbean_dream"
+		name = "GFX_TPO_caribbean_dream_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_CD.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -195,7 +195,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_TPO_vae_victis"
+		name = "GFX_TPO_vae_victis_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_CD_VV.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -229,7 +229,7 @@ spriteTypes = {
 
 
 		SpriteType = {
-		name = "GFX_TPO_vae_victis_HOL"
+		name = "GFX_TPO_vae_victis_HOL_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_CD_VV.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -261,7 +261,7 @@ spriteTypes = {
 	}
 
 		SpriteType = {
-		name = "GFX_TPO_vae_victis_FRA"
+		name = "GFX_TPO_vae_victis_FRA_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_CD_FRA.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -293,7 +293,7 @@ spriteTypes = {
 	}
 
 		SpriteType = {
-		name = "GFX_TPO_british"
+		name = "GFX_TPO_british_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_british.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -325,7 +325,7 @@ spriteTypes = {
 	}
 
 		SpriteType = {
-		name = "GFX_TPO_USA_4"
+		name = "GFX_TPO_USA_4_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_BAH_JAM.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -357,7 +357,7 @@ spriteTypes = {
 	}
 
 		SpriteType = {
-		name = "GFX_TPO_TRI_BAS"
+		name = "GFX_TPO_TRI_BAS_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_CD_TRI_BAS.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -389,7 +389,7 @@ spriteTypes = {
 	}
 
 		SpriteType = {
-		name = "GFX_TPO_local_powers"
+		name = "GFX_TPO_local_powers_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_CD_ON.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -421,7 +421,7 @@ spriteTypes = {
 	}
 
 		SpriteType = {
-		name = "GFX_TPO_CUBA"
+		name = "GFX_TPO_CUBA_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_CD_CU.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -453,7 +453,7 @@ spriteTypes = {
 	}
 
 		SpriteType = {
-		name = "GFX_TPO_domrep"
+		name = "GFX_TPO_domrep_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_CD_DR.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -485,7 +485,7 @@ spriteTypes = {
 	}
 
 		SpriteType = {
-		name = "GFX_TPO_haiti"
+		name = "GFX_TPO_haiti_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_CD_HA.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -517,7 +517,7 @@ spriteTypes = {
 	}
 
 		SpriteType = {
-		name = "GFX_TPO_CU"
+		name = "GFX_TPO_CU_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_CD.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -549,7 +549,7 @@ spriteTypes = {
 	}
 
 		SpriteType = {
-		name = "GFX_TPO_CS"
+		name = "GFX_TPO_CS_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_CD_infra.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -581,7 +581,7 @@ spriteTypes = {
 	}
 
 		SpriteType = {
-		name = "GFX_TPO_UT"
+		name = "GFX_TPO_UT_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_CD_tarifs.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -613,7 +613,7 @@ spriteTypes = {
 	}
 
 		SpriteType = {
-		name = "GFX_TPO_education"
+		name = "GFX_TPO_education_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_CD_education.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -645,7 +645,7 @@ spriteTypes = {
 	}
 
 		SpriteType = {
-		name = "GFX_TPO_IE"
+		name = "GFX_TPO_IE_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_CD_industry.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -677,7 +677,7 @@ spriteTypes = {
 	}
 
 		SpriteType = {
-		name = "GFX_TPO_UP"
+		name = "GFX_TPO_UP_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_CD_politics.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -709,7 +709,7 @@ spriteTypes = {
 	}
 
 		SpriteType = {
-		name = "GFX_TPO_EB"
+		name = "GFX_TPO_EB_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_CD_economy.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -741,7 +741,7 @@ spriteTypes = {
 	}
 
 		SpriteType = {
-		name = "GFX_TPO_CD_army"
+		name = "GFX_TPO_CD_army_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_CD_army.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -773,7 +773,7 @@ spriteTypes = {
 	}
 
 		SpriteType = {
-		name = "GFX_TPO_US"
+		name = "GFX_TPO_US_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_CD_US.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -806,7 +806,7 @@ spriteTypes = {
 ##########################################################################################################################
 	
 		SpriteType = {
-		name = "GFX_TPO_AP"
+		name = "GFX_TPO_AP_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_AP_AP.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -838,7 +838,7 @@ spriteTypes = {
 	}
 
 		SpriteType = {
-		name = "GFX_TPO_TF"
+		name = "GFX_TPO_TF_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_AP_TF.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -870,7 +870,7 @@ spriteTypes = {
 	}
 
 		SpriteType = {
-		name = "GFX_TPO_COG"
+		name = "GFX_TPO_COG_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_AP_cities.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -902,7 +902,7 @@ spriteTypes = {
 	}
 
 		SpriteType = {
-		name = "GFX_TPO_IF"
+		name = "GFX_TPO_IF_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_AP_master.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -934,7 +934,7 @@ spriteTypes = {
 	}
 
 		SpriteType = {
-		name = "GFX_TPO_TT"
+		name = "GFX_TPO_TT_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_AP_TT.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -966,7 +966,7 @@ spriteTypes = {
 	}
 
 		SpriteType = {
-		name = "GFX_TPO_SOG"
+		name = "GFX_TPO_SOG_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_AP_SOG.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -998,7 +998,7 @@ spriteTypes = {
 	}
 
 		SpriteType = {
-		name = "GFX_TPO_FT"
+		name = "GFX_TPO_FT_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_AP_fort.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1030,7 +1030,7 @@ spriteTypes = {
 	}
 
 		SpriteType = {
-		name = "GFX_TPO_science"
+		name = "GFX_TPO_science_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_AP_education.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1062,7 +1062,7 @@ spriteTypes = {
 	}
 
 		SpriteType = {
-		name = "GFX_TPO_FC"
+		name = "GFX_TPO_FC_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_AP_offshore.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1094,7 +1094,7 @@ spriteTypes = {
 	}
 
 		SpriteType = {
-		name = "GFX_TPO_ROT"
+		name = "GFX_TPO_ROT_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_AP_streets.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1126,7 +1126,7 @@ spriteTypes = {
 	}
 
 		SpriteType = {
-		name = "GFX_TPO_dynasty"
+		name = "GFX_TPO_dynasty_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_AP_family.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1158,7 +1158,7 @@ spriteTypes = {
 	}
 ################################################################################################################
 		SpriteType = {
-		name = "GFX_TPO_oppose"
+		name = "GFX_TPO_oppose_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_OP_oppose.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1190,7 +1190,7 @@ spriteTypes = {
 	}
 
 		SpriteType = {
-		name = "GFX_TPO_rebels"
+		name = "GFX_TPO_rebels_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_OP_rebels.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1222,7 +1222,7 @@ spriteTypes = {
 	}
 
 		SpriteType = {
-		name = "GFX_TPO_police"
+		name = "GFX_TPO_police_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_OP_rebels.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1254,7 +1254,7 @@ spriteTypes = {
 	}
 
 		SpriteType = {
-		name = "GFX_TPO_military"
+		name = "GFX_TPO_military_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_OP_military.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1286,7 +1286,7 @@ spriteTypes = {
 	}
 
 		SpriteType = {
-		name = "GFX_TPO_vacation"
+		name = "GFX_TPO_vacation_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_OP_vacation.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1318,7 +1318,7 @@ spriteTypes = {
 	}
 
 		SpriteType = {
-		name = "GFX_TPO_GER"
+		name = "GFX_TPO_GER_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_OP_GER.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1350,7 +1350,7 @@ spriteTypes = {
 	}
 
 		SpriteType = {
-		name = "GFX_TPO_allies"
+		name = "GFX_TPO_allies_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_OP_Allies.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1382,7 +1382,7 @@ spriteTypes = {
 	}
 
 		SpriteType = {
-		name = "GFX_TPO_SOV"
+		name = "GFX_TPO_SOV_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_OP_SOV.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1414,7 +1414,7 @@ spriteTypes = {
 	}
 
 		SpriteType = {
-		name = "GFX_TPO_CHI"
+		name = "GFX_TPO_CHI_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_OP_CHI.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1446,7 +1446,7 @@ spriteTypes = {
 	}
 
 		SpriteType = {
-		name = "GFX_TPO_discourse"
+		name = "GFX_TPO_discourse_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_OP_discourse.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1478,7 +1478,7 @@ spriteTypes = {
 	}
 
 		SpriteType = {
-		name = "GFX_TPO_TU"
+		name = "GFX_TPO_TU_shine"
 		texturefile = "gfx/interface/goals/focus_TPO_CD_TU.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
