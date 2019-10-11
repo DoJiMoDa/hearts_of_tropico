@@ -154,3 +154,133 @@
  tropico.31.t:0"The Penultimos"
  tropico.31.d:0"El Presidente, I might have made a big mistake. I invited my family over to celebrate our loyality to your family. I hope they don't interrupt you."
  tropico.31.a:0"More Penultimos!?"
+ 
+ tropico.32:0"The Coup"
+ tropico.32.t:0"What did he ever do for us?"
+ tropico.32.d:0"Except for a fresh water system, the sanatation, roads, medicine, education, irrigation, public order, rum and public health. What has he ever done for us?"
+ tropico.32.a:0"Nothing!"
+
+ tropico.33:0"The Rebels"
+ tropico.33.t:0"The Trap"
+ tropico.33.d:0"Our Trap worked the rebels are captured. Now we can negotiate their capitulation. But enemys of the Tyrant are our friends."
+ tropico.33.a:0"Good"
+ 
+ tropico.34:0"Call the Police"
+ tropico.34.t:0"The Party"
+ tropico.34.d:0"I had a little game of Golf with the Police Chief. You wouldn't believe it but El Presidente didn't attend the birthday of his niece. He is willing to support us"
+ tropico.34.a:0"What a Tyrant"
+ 
+ tropico.35:0"In the Navy"
+ tropico.35.t:0"Support is expensive"
+ tropico.35.d:0"I talked to a few Friends in the Military. They will support us if they get something special for the Armies. Things like life jackets, helmets and windows for the airplanes."
+ tropico.35.a:0"Such decadence"
+ 
+ tropico.36:0"The Vacation"
+ tropico.36.t:0"An accident"
+ tropico.36.d:0"The plan is set, everyone knows what to do. We are ready to strike. We arranged a vacation for el presidente he might have an accident. Today is the day we strike."
+ tropico.36.a:0"Execute Order 66"
+ 
+ tropico.37:0"Sphere of Influence"
+ tropico.37.t:0"The banquet"
+ tropico.37.d:0"Its time to open Tropico for the World. We need to put us out there and show everyone what we can offer."
+ tropico.37.a:0"Partytime"
+ #####################################Germans#############################
+ tropico.38:0"German Embassy"
+ tropico.38.t:0"The Germans are comming"
+ tropico.38.d:0"Now they are here. With all their Sauerkraut and Bratwurst. They seem to be a great Allie just look at their fancy uniforms."
+ tropico.38.a:0"Zum Wohl!"
+ 
+ tropico.39:0"German Support"
+ tropico.39.t:0"The Bags are Packed"
+ tropico.39.d:0"Today a representative of the Germans took the Equipment we prepared for them. He picked the right crate and the right rifle to not kill himself."
+ tropico.39.a:0"lets hope nobody gets hurt"
+ 
+ tropico.40:0"German Companies"
+ tropico.40.t:0"What are those?"
+ tropico.40.d:0"I was wakened up by a loud engine noise. Apparently, we allowed the Germans to build companies here in our country. I´m pretty sure there was a Forest yesterday but today they build tanks here."
+ tropico.40.a:0"These horny Germans"
+ 
+ tropico.41:0"Axies"
+ tropico.41.t:0"Our Part"
+ tropico.41.d:0"Finally, we are part of a mighty Alliance. The Germans are a pretty good Partner and The Big Man himself said. Don't worry everything is fine."
+ tropico.41.a:0"What could go wrong"
+ #####################################Allies######################################
+ tropico.42:0"Allies"
+ tropico.42.t:0"Join the Army"
+ tropico.42.d:0"There is a colorful mix of people who are taking over the new build embassy. They have code words for everything and don't want us to know too much about what they do."
+ tropico.42.a:0"Codewords are cool"
+ 
+ tropico.43:0"Allies Support"
+ tropico.43.t:0"An offer we cant refuse"
+ tropico.43.d:0"The US Highcommand requested vital Equipment what only we can provide... probably not but they asked nicely."
+ tropico.43.a:0"We do our party"
+ 
+ tropico.44:0"Shipwreckbay"
+ tropico.44.t:0"The Brits are coming"
+ tropico.44.d:0"Today a little group of our new friends came up with an idea to make the Islands around Tropico to emergency Harbors. Sounds pretty cool but it just means we are attacked before the US will be."
+ tropico.44.a:0"They will protect us."
+ 
+ tropico.45:0"Winning Team"
+ tropico.45.t:0"The Gentlemans Club"
+ tropico.45.d:0"The Invitation is here. We are now a formally member of the Allies. The British gave a big Party and the US-Senator told us half of the Troops that were ready to invade us are now on vacation."
+ tropico.45.a:0"Finaly"
+ ###############################Soviet Union#########################################
+ tropico.46:0"Soviet Union"
+ tropico.46.t:0"The silent Man"
+ tropico.46.d:0"A Man who was eating for two days and drinking heavily now has spoken his first words. He Pointed on a building and said:'Embassy'. The good news... the Soviet Delegation is here to support us."
+ tropico.46.a:0"This is great"
+ 
+ tropico.47:0"Soviet Support"
+ tropico.47.t:0"Boxes full of scrap"
+ tropico.47.d:0"The Soviet Union requested a little bit of equipment to strengthen our friendship. We boxed up some of the things that were laying around. Let's hope its enough."
+ tropico.47.a:0"a gifted horse..."
+ 
+ tropico.48:0"Soviet Research"
+ tropico.48.t:0"The drunken Man"
+ tropico.48.d:0"Do you remember the drunken man that turned out to be from the Soviet Union? He is a scientist and here to build research facilities. We now support his effort."
+ tropico.48.a:0"What a supprise"
+ 
+ tropico.49:0"Part of the Union"
+ tropico.49.t:0"Brothers"
+ tropico.49.d:0"We now can join the Soviet Union. We are even allowed to make our own decisions... sometimes... after Moscow told us what we want."
+ tropico.49.a:0"Sounds fair"
+ ##########################China######################################
+ tropico.50:0"China"
+ tropico.50.t:0"The Chinese arrive"
+ tropico.50.d:0"Today I meet a new guy. He told me he is part of the new delegation of China. I tried to find the others. But wherever i go I meet the same guy."
+ tropico.50.a:0"Interessting"
+ 
+ tropico.51:0"Chinese Support"
+ tropico.51.t:0"Technical Adventage"
+ tropico.51.d:0"The Chinese requested some equipment they want to produce. We just hand them examples and they will handle the rest for themselves."
+ tropico.51.a:0"We support our friends"
+ 
+ tropico.52:0"The Sleeping Dragon"
+ tropico.52.t:0"The new Workforce"
+ tropico.52.d:0"The Chinese thank us for being their friends. So they send over a few men to support our production lines. You should see them work. Very efficient and very low food consumption"
+ tropico.52.a:0"We might need more"
+ 
+ tropico.53:0"Far East"
+ tropico.53.t:0"The Chinese invite us"
+ tropico.53.d:0"We now can be part of the Beef... that's how they begin the letter to us... maybe I need to learn some Chinese. But  I think they want us to be in an alliance with them."
+ tropico.53.a:0"lets do it!"
+ #############################USA Pressure###############################
+ tpo_usa.1:0"Free Caribbean"
+ tpo_usa.1.t:0"No need for Walls"
+ tpo_usa.1.d:0"El Presidente, Today a Letter arrived us from the US They ask for support. They would let's say... look away from the South. If we take care of some unpatriotic rebels that form around the central American countries." 
+ tpo_usa.1.a:0"A good deal"
+
+ tpo_usa.2:0"Ami go home"
+ tpo_usa.2.t:0"I got a plan..."
+ tpo_usa.2.d:0"El Presidente, I have an idea. I know how we can end the grip of the United States around the Caribbean. We gather their respect by becoming a powerhouse. How we do it is easy. We add more Chimneys to our factories, so we produce enough smoke that they think we are an industrial nation."
+ tpo_usa.2.a:0"I gather the Cigars"
+
+ tpo_usa.3:0"Operation Woodcutter"
+ tpo_usa.3.t:0"Freedom"
+ tpo_usa.3.d:0"This might be crazy El-Presidente but you know these jungles in the north of South America. Wouldn't it be great if these Trees would be free? Not just for Sunny but to give the People their Freedom as well? No!? Okay, Then we will deploy people there dressed as Natives that will weaken the US-influence."
+ tpo_usa.3.a:0"Thats sounds like me."
+
+ tpo_usa.4:0"The southest South"
+ tpo_usa.4.t:0"Young, proud and dumb."
+ tpo_usa.4.d:0"Not the models I meet in your palace El Presidente, but the Nations in South America. They are like kittens who just got independence from their mother. Stretching their paws for political influence. The influence we can provide. And push them in the right direction"
+ tpo_usa.4.a:0"let them purr"

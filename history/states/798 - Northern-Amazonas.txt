@@ -1,0 +1,24 @@
+state={
+	id=799
+	name="STATE_799"
+	manpower = 274682
+	
+	state_category = pastoral
+	
+	resources={
+		rubber=4
+	}
+
+	history={
+		owner = BRA
+		buildings = {
+			infrastructure = 0
+
+		}
+		add_core_of = BRA
+	}
+
+	provinces={
+		4980 5008 5083 5214 10934
+	}
+}

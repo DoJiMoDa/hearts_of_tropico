@@ -82,7 +82,7 @@ focus = {
 					}
 					
 		available_if_capitulated = yes
-		bypass={ CRC ={country_exists = yes}
+		bypass={ country_exists = CRC
 			   }
 		completion_reward = {
 					country_event = { id= tropico.3 }
@@ -105,7 +105,7 @@ focus = {
 						
 					
 		
-		bypass={ GDL ={country_exists = yes}
+		bypass={ country_exists = GDL
 			   }
 		
 		available_if_capitulated = yes
@@ -150,8 +150,8 @@ focus = {
 						 }
 					
 					}
-		bypass={ JAM ={country_exists = yes}
-				 BAH ={country_exists = yes}
+		bypass={ country_exists = JAM
+				 country_exists = BAH
 			   }
 		
 		available_if_capitulated = yes
@@ -175,8 +175,8 @@ focus = {
 						   ENG={has_war = yes}
 						 }
 					}
-		bypass={ TRI ={country_exists = yes}
-				 BAS ={country_exists = yes}
+		bypass={ country_exists = TRI
+				 country_exists = BAS
 			   }	
 			   
 		available_if_capitulated = yes
@@ -288,15 +288,15 @@ focus = {
 		cost = 5
 		
 		available = {
-						CUB ={country_exists = yes}
-						BAH ={country_exists = yes}
-						DOM ={country_exists = yes}
-						HAI ={country_exists = yes}
-						JAM ={country_exists = yes}
-						TRI ={country_exists = yes}
-						BAS ={country_exists = yes}
-						CRC ={country_exists = yes}
-						GDL ={country_exists = yes}
+						country_exists = CUB
+						country_exists = BAH
+						country_exists = DOM
+						country_exists = HAI
+						country_exists = JAM
+						country_exists = TRI
+						country_exists = BAS
+						country_exists = CRC
+						country_exists = GDL
 					}
 		
 		available_if_capitulated = yes
@@ -589,7 +589,7 @@ focus = {
 		relative_position_id = caribbean_union
 		x = 0
 		y = 2
-		cost = 21.5
+		cost = 4.4
 		
 		available = {	}
 		
@@ -760,8 +760,14 @@ focus = {
 									add_state_core = 308
 									add_state_core = 686
 							 }
+						  DOM ={annex_country = {
+								target = HAI
+								transfer_troops = yes
+							                    }
+							   add_state_core = 318
+							   }   
+								   
 								DOM ={ set_cosmetic_tag = IDH}
-								HAI ={ set_cosmetic_tag = IDH}
 								JAM ={ set_cosmetic_tag = IRO}
 								CUB ={ set_cosmetic_tag = IEN}
 								PUE ={ set_cosmetic_tag = AEO}
@@ -821,7 +827,7 @@ focus = {
 		relative_position_id = absolut_power
 		x = -2
 		y = 2
-		cost = 21.5
+		cost = 4.4
 		
 		available = {}
 							
@@ -865,7 +871,7 @@ focus = {
 		relative_position_id = absolut_power
 		x = 1
 		y = 2
-		cost = 21.5
+		cost = 4.4
 		
 		available = {}
 							
@@ -899,7 +905,7 @@ focus = {
 		relative_position_id = absolut_power
 		x = -6
 		y = 2
-		cost = 21.5
+		cost = 4.4
 		
 		available = {
 						
@@ -920,7 +926,7 @@ focus = {
 		relative_position_id = prepare
 		x = -1
 		y = 1
-		cost = 21.5
+		cost = 4.4
 		
 		available = {}
 							
@@ -954,7 +960,7 @@ focus = {
 		relative_position_id = prepare
 		x = 1
 		y = 1
-		cost = 21.5
+		cost = 4.4
 		
 		available = {}
 							
@@ -1018,7 +1024,7 @@ focus = {
 		relative_position_id = cities_of_gold
 		x = -1
 		y = 1
-		cost = 21.5
+		cost = 4.4
 		
 		available = {TPO={has_tech = experimental_rockets 
 						  has_tech = atomic_research}
@@ -1048,7 +1054,7 @@ focus = {
 		relative_position_id = cities_of_gold
 		x = 1
 		y = 1
-		cost = 21.5
+		cost = 4.4
 		
 		available = {}
 							
@@ -1085,7 +1091,7 @@ focus = {
 		relative_position_id = island_families
 		x = 0
 		y = 1
-		cost = 21.5
+		cost = 4.4
 		
 		available = {}
 							
@@ -1124,7 +1130,7 @@ focus = {
 		relative_position_id = island_families
 		x = -5
 		y = 3
-		cost = 42.9
+		cost = 21.9
 		
 		available = {}
 							
